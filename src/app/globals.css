@@ -46,8 +46,4 @@ a {
   src: url(../fonts/helveticaneuecyr-ultralight.otf);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+
