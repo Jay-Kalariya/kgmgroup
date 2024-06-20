@@ -6,7 +6,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { opacity } from "./anim";
 import NavSection from "./nav/index";
-// import logoImage from "../../images/PVOT-Design-Final-Logo-White.png";
 
 export default function NewNav() {
   const [isActive, setIsActive] = useState(false);
@@ -29,7 +28,7 @@ export default function NewNav() {
       <div className="bar">
         <Link
           className="nav_icon_custom"
-          href="/PVOT"
+          href="/"
           // onClick={() => {
           //   if (isActive) {
           //     setIsActive(!isActive);

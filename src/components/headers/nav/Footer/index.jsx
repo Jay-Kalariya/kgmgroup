@@ -11,7 +11,7 @@ export default function Footer() {
                     variants={translate} initial="initial" 
                     animate="enter" 
                     exit="exit">
-                    <span>Email:</span>Pvot@gmail.com
+                    <span>Email:</span>abc@gmail.com
                 </motion.li>
             </ul>
             <ul className='ul'>

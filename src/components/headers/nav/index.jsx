@@ -12,37 +12,37 @@ import PropTypes from "prop-types";
 const links = [
   {
     title: "Home",
-    href: "/PVOT",
+    href: "/",
     // src: image1,
   },
   {
     title: "Services",
-    href: "/PVOT/services",
+    href: "/",
     // src: image2,
   },
   {
     title: "Know-us",
-    href: "/PVOT/knowUs",
+    href: "/",
     // src: image1,
   },
   {
     title: "Portfolio",
-    href: "/PVOT/portfolio",
+    href: "/",
     // src: image2,
   },
   {
     title: "Blogs",
-    href: "/PVOT/blog",
+    href: "/",
     // src: image1,
   },
   {
     title: "Career",
-    href: "/PVOT/career",
+    href: "/",
     // src: image2,
   },
   {
     title: "Contact-us",
-    href: "/PVOT/contact-us",
+    href: "/",
     // src: image1,
   },
 ];
