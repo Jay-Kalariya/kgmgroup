@@ -5,7 +5,6 @@
   font-size: 12px;
   margin-top: 5.5rem;
   color: #ffffff;
-  font-family: "gilroy";
   
 }
 .ul {
@@ -18,7 +17,6 @@
 
 .ul li span {
   color: #ffffff;
-  font-family: "gilroy";
 }
 
 @media only screen and (min-width: 1000px) {
