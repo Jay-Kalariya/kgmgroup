@@ -1,0 +1,79 @@
+.portfolioCardItem {
+  color: #fff;
+  margin: 0;
+  width: 50%;
+  padding: 0 40px;
+}
+.portfolioCardItem_heading h6 {
+  color: #fff;
+  font-family: "gilroy";
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.portfolioCardItem_image img {
+  max-width: 100%;
+  width: 100%;
+}
+.portfolioCardItem_text {
+  color: #ababab;
+  font-family: "gilroy";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 16px;
+}
+.portfolioCardItem_btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0;
+}
+.portfolioCardItem_btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.portfolioCardItem_btn .portfolioCardItem_btn_text {
+  color: #fff;
+}
+.portfolioCardItem:nth-child(2n + 2) {
+  position: inherit;
+  top: 136px;
+}
+
+.portfolioCardItem_btn:active {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+.portfolioCardItem_btn:focus-visible {
+  box-shadow: none !important;
+}
+.portfolioCardItem_content {
+  padding: 20px 0 48px;
+}
+
+@media (max-width: 991px) {
+  .portfolioCardItem_heading h6 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .portfolioCardItem_text {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 12px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolioCardItem {
+    width: 100%;
+  }
+  .portfolioCardItem {
+    padding: 0;
+  }
+}
