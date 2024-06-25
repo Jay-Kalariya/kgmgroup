@@ -1,6 +1,6 @@
 .header_sec {
   background-color:transparent;
-  /* position: fixed; */
+  position: sticky !important;
   width: 100%;
   position: absolute;
   box-sizing: border-box;

@@ -1,0 +1,30 @@
+.BigTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 10vw;
+  letter-spacing: normal;
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  right: 0; /* Ensure the elements are positioned relative to the right */
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+  /* border-bottom: 1px solid #2f2b28; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  justify-content: center;
+  position: relative;
+  will-change: transform; /* for smoother animation */
+}
