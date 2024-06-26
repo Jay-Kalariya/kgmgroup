@@ -8,34 +8,45 @@ import Image from "next/image";
 
 
 const PortfolioCardItem = ({ image }) => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1 1"],
-  });
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["0 1", "1 1"],
+  // });
 
   // Adjust the tilt effect based on scroll position
-  const tiltProgress = useTransform(scrollYProgress, [0, 1], [10, 0]);
+  // const tiltProgress = useTransform(scrollYProgress, [0, 1], [-20, 0]);
 
   // Adjust opacity based on scroll position
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  // const tiltProgress = useTransform(scrollYProgress, [0, 1], [0, -10]);
-  // const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  // const opacityProgress = useTransform(scrollYProgress, [0, 0.7, 1], [0, 0.3, 1]);
   return (
     <motion.div
-      ref={ref}
-      style={{
-        rotate: tiltProgress, // Apply tilt effect from left to zero based on scroll
-        opacity: opacityProgress, // Fade in based on scroll
-        transformOrigin: "left center", // Set the transform origin to left for the tilt effect
+      // ref={ref}
+      // style={{
+        // x: tiltProgress, // Apply horizontal translation based on scroll
+        // rotate: tiltProgress, // Apply tilt effect from left to zero based on scroll
+        // opacity: opacityProgress, // Fade in based on scroll
+        // transformOrigin: "center center", // Set the transform origin to left for the tilt effect
      
-      }}
+      // }}
       className="portfolioCardItem"
     >
       <div className="portfolioCardItem_wrapper">
-        <div className="portfolioCardItem_image">
+        <motion.div
+        initial={{
+          x: -300,
+          rotate: -10,
+        }}
+        whileInView={{
+          x: 0,
+          rotate: 0,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+         className="portfolioCardItem_image">
           <Image src={image} alt="cardItem1" />
-        </div>
+        </motion.div>
         <div className="portfolioCardItem_content">
           <div className="portfolioCardItem_heading">
             <h6>Lorem Impsun</h6>
