@@ -47,7 +47,7 @@ const links = [
   },
 ];
 
-export default function NavSection({ navLinkHandler }) {
+export default function NavSection({ navLinkHandler }) { 
   const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,
