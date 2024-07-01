@@ -1,5 +1,6 @@
 // import BigText from "@/components/bigTextHeading/BigText";
 import Abc from "@/components/headingtextdemo/Textdemo";
+import Howwework from "@/components/howwework/howwework";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Model />
       <Abc />
       <PortfolioCard />
+      <Howwework />
       {/* <p>Header</p> */}
     </div>
   );
