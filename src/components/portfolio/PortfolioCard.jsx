@@ -1,8 +1,8 @@
 import "./portfolioCard.css";
 import PortfolioCardItem from "./portfolioCardItem/PortfolioCardItem";
-import cardItem1 from "../../images/img1.webp";
-import cardItem2 from "../../images/portfolioCard_2.png";
-import cardItem3 from "../../images/portfolioCard_3.png";
+import cardItem1 from "../../images/interoperation.png";
+import cardItem2 from "../../images/insights.png";
+import cardItem3 from "../../images/content-image-side-module-image.jpg";
 // import cardItem4 from "../../images/portfolioCard_4.png";
 // import cardItem5 from "../../images/portfolioCard_5.png";
 // import cardItem6 from "../../images/portfolioCard_6.png";
