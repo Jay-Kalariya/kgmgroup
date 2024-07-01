@@ -1,12 +1,13 @@
 "use client";
 import "./portfolioCardItem.css";
-import Button from "@/components/Button/Button";
+import { motion } from "framer-motion";
+// import Button from "@/components/Button/Button";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import PropTypes from "prop-types";
 
-const PortfolioCardItem = ({ image }) => {
+const PortfolioCardItem = ({ image, heading, text, btn }) => {
   const imageRef = useRef(null);
   const cardRef = useRef(null);
 
@@ -37,13 +38,27 @@ const PortfolioCardItem = ({ image }) => {
         <div ref={imageRef} className="portfolioCardItem_image">
           <Image src={image} alt="cardItem1" />
         </div>
-        <div className="portfolioCardItem_content">
+        <motion.div
+          className="portfolioCardItem_content"
+          initial={{
+            opacity: 1,
+            y: 220,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}
+        >
           <div className="portfolioCardItem_heading">
-            <h6>Lorem Impsun</h6>
+            <h6>{heading}</h6>
           </div>
-          <div className="portfolioCardItem_text">Lorem Impsum</div>
-          <Button text={"read more"} />
-        </div>
+          <div className="portfolioCardItem_text">{text}</div>
+          {/* <Button text={"read more"} /> */}
+        </motion.div>
       </div>
     </div>
   );

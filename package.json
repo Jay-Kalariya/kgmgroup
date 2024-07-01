@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@react-three/fiber": "^7.0.29",
+    "@studio-freight/lenis": "^1.0.42",
     "framer-motion": "^11.2.11",
     "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"

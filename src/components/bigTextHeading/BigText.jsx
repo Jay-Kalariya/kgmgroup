@@ -2,35 +2,53 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 import styles from "@/components/bigTextHeading/BigText.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const BigText = ({ texts }) => {
+const BigText = ({ texts ,xDirection , X1Direction  ,X2Direction}) => {
   const textRefs = useRef([]);
 
   useEffect(() => {
+    const lenis = new Lenis({
+      smooth: true,
+      lerp: 0.1,
+      direction: 'vertical',
+    });
+
+    const animate = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+
     textRefs.current.forEach((text) => {
       gsap.fromTo(
         text,
-        { x: "30%" },
+        { x: xDirection },
         {
           backgroundSize: "100%",
           ease: "power1.inOut",
-          x: "0%", 
+          x: X1Direction,
           scrollTrigger: {
-            trigger: text,
-            start: "center 80%",
-            end: "center 40%",
-            scrub: true,
+            trigger: text,    
+            start: "center 100%",
+            end: "center 50%",
+            scrub: 1.5,
             // markers: true,
             onLeaveBack: () => {
-              gsap.set(text, { x: "30%" }); // Reset to initial position when scrolling back up
+              gsap.set(text, { x: X2Direction}); // Reset to initial position when scrolling back up
             },
           },
         }
       );
     });
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   return (
@@ -47,6 +65,7 @@ const BigText = ({ texts }) => {
     </div>
   );
 };
+
 BigText.defaultProps = {
   texts: [],
 };
