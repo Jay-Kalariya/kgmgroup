@@ -1,0 +1,30 @@
+.cardContainer{
+    padding: 200px 40px 0 40px;
+}
+.cardWrapper {
+  padding: 40px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin-bottom: 12px;
+  border: 1px solid white;
+  
+}
+.cardHeader {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardContent {
+  text-align: end;
+  font-size: 30px;
+}
+.leftCard {
+  align-items: flex-start;
+}
+
+.rightCard {
+  align-items: flex-end;
+}
