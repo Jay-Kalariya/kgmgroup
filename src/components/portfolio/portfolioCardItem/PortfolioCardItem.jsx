@@ -7,7 +7,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import PropTypes from "prop-types";
 
-const PortfolioCardItem = ({ image, heading, text, btn }) => {
+const PortfolioCardItem = ({ Xdirection, RotateDirection, image, heading, text, btn }) => {
   const imageRef = useRef(null);
   const cardRef = useRef(null);
 
@@ -15,8 +15,8 @@ const PortfolioCardItem = ({ image, heading, text, btn }) => {
     gsap.fromTo(
       imageRef.current,
       {
-        x: -300,
-        rotate: -10,
+        x: Xdirection,
+        rotate: RotateDirection,
       },
       {
         x: 0,
