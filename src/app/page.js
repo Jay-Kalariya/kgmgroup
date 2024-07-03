@@ -6,6 +6,7 @@ import Abc from "@/components/headingtextdemo/Textdemo";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
 import Lenis from '@studio-freight/lenis';
+import FourCards from "@/components/fourcards/FourCards";
 
 export default function Home() {
   useEffect(() => {
@@ -35,10 +36,11 @@ export default function Home() {
 
   return (
     <div data-scroll-container>
-      <Model />
+      {/* <Model />
       <Abc />
-      <PortfolioCard />
+      <PortfolioCard /> */}
       {/* <Howwework /> */}
+      <FourCards />
 
 
 
