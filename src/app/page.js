@@ -6,6 +6,7 @@ import Howwework from "@/components/howwework/Howwework";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
 import Lenis from '@studio-freight/lenis';
+import FourCards from "@/components/fourcards/FourCards";
 
 export default function Home() {
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function Home() {
       <Howwework />
 
       {/* <Howwework /> */}
+      <FourCards />
 
 
 
