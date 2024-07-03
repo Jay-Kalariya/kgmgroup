@@ -10,71 +10,24 @@ import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 function Howwework() {
-  const texts = ["Who", "We Are" ];
-  useEffect(() => {
-    gsap.fromTo(
-      `.${styles.cardContent}`,
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: `.${styles.cardContent}`,
-          start: "top 80%",
-          toggleActions: "play none none none",
-          scrub:true,
-          onLeaveBack: () =>{
-            gsap.set(`${styles.cardContent} ` , {y : 50})
-          }
-        },
-      }
-    );
-
-    gsap.fromTo(
-      `.${styles.sideCard}`,
-      {
-        opacity: 0,
-        x: 50,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        delay: 1,
-        scrollTrigger: {
-          trigger: `.${styles.sideCard}`,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-
-    gsap.fromTo(
-      `.${styles.button}`,
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        duration: 1,
-        delay: 10,
-        scrollTrigger: {
-          trigger: `.${styles.button}`,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-  }, []);
+  const text1 = ["Who"];
+  const text2 = ["We Are"];
   return (
     <div className={styles.cardMain}>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeader}>
-          <BigText texts={texts} />
+          <BigText
+            texts={text1}
+            xDirection={"-40px"}
+            X1Direction={"100px"}
+            X2Direction={"100%"}
+          />
+          <BigText
+            texts={text2}
+            xDirection={"200px"}
+            X1Direction={"100px"}
+            X2Direction={"100%"}
+          />
         </div>
         <div className={styles.cardContent}>
           <p>
