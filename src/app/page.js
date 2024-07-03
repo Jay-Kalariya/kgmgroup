@@ -40,7 +40,7 @@ export default function Home() {
       <Abc />
       <PortfolioCard />
       {/* <Howwework /> */}
-      {/* <FourCards /> */}
+      <FourCards />
 
 
 
