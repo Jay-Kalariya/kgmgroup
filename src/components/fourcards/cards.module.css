@@ -7,7 +7,7 @@
     overflow: hidden;
     margin-top: -6rem !important;
     padding-top: 6rem !important;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
   
   .trHomeAchievedContainer {
@@ -241,4 +241,8 @@
     align-self: flex-end;
     text-align: right;
   }
-  
+  @media (max-width: 575px){
+    .trHomeAchievedNumber {
+      font-size: 5rem;
+    }
+  }
