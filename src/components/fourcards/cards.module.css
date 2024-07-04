@@ -245,4 +245,10 @@
     .trHomeAchievedNumber {
       font-size: 5rem;
     }
+    .BigTextHeadingInner{
+      padding-bottom: 5rem;
+    }
+  }
+  .BigTextHeadingInner{
+    padding-bottom: 10rem;
   }
