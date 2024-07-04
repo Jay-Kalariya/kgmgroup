@@ -8,6 +8,8 @@
   @media (min-width: 1140px) {
     .dribbbleSection {
       padding-bottom: 0;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
   }
   
