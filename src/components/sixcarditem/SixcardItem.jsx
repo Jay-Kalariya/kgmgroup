@@ -31,9 +31,9 @@ const SixcardItem = () => {
           <div className={`${styles.sectionTitle} ${styles.container}`}>
             <div className={styles.sectionTitleLeft}>
               <h4 className="headingAnimation">
-                Like a lion's roar echoing through 
-                the jungle, a hint of our creative
-                minds emerges.
+                Like a lions roar echoing through 
+                the jungle a hint of our creative
+                minds emerges
               </h4>
             </div>
           </div>
