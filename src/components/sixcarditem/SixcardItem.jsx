@@ -25,14 +25,14 @@ const SixcardItem = () => {
               data-nimg="1"
               className="fadeUp"
               style={{ color: 'transparent' }}
-              src="/_next/static/media/dribbble.1a51ca99.webp"
+              src={dribbble1}
             />
           </div>
           <div className={`${styles.sectionTitle} ${styles.container}`}>
             <div className={styles.sectionTitleLeft}>
               <h4 className="headingAnimation">
-                Like a lion's roar echoing through <br />
-                the jungle, a hint of our creative <br />
+                Like a lion's roar echoing through 
+                the jungle, a hint of our creative
                 minds emerges.
               </h4>
             </div>
