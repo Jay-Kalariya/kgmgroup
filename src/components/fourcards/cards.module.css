@@ -245,6 +245,7 @@
     .trHomeAchievedNumber {
       font-size: 4rem;
       letter-spacing: -3px;
+      line-height: normal;
     }
     .BigTextHeadingInner{
       padding-bottom: 5rem;
