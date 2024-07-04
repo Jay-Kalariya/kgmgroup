@@ -7,7 +7,7 @@
     overflow: hidden;
     margin-top: -6rem !important;
     padding-top: 6rem !important;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
   
   .trHomeAchievedContainer {
@@ -235,10 +235,22 @@
   
   .trHomeAchievedCategory {
     font-size: 1.9rem;
-    line-height: 1.6rem;
+    line-height: normal;
     transition: all 0.5s ease;
     width: 100%;
     align-self: flex-end;
     text-align: right;
   }
-  
+  @media (max-width: 575px){
+    .trHomeAchievedNumber {
+      font-size: 4rem;
+      letter-spacing: -3px;
+      line-height: normal;
+    }
+    .BigTextHeadingInner{
+      padding-bottom: 5rem;
+    }
+  }
+  .BigTextHeadingInner{
+    padding-bottom: 10rem;
+  }
