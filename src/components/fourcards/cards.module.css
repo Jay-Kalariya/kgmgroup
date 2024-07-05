@@ -7,7 +7,7 @@
     overflow: hidden;
     margin-top: -6rem !important;
     padding-top: 6rem !important;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
   
   .trHomeAchievedContainer {
@@ -235,7 +235,7 @@
   
   .trHomeAchievedCategory {
     font-size: 1.9rem;
-    line-height: 1.6rem;
+    line-height: normal;
     transition: all 0.5s ease;
     width: 100%;
     align-self: flex-end;

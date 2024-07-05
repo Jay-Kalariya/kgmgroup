@@ -117,4 +117,7 @@
     padding: 21px 15px 48px 15px;
   
   }
+  .portfolioCardItem_wrapper{
+    margin-bottom: 0px;
+  }
 }

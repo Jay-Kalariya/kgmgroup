@@ -4,7 +4,7 @@ function Header() {
         <header>
             <nav>
                 <div>
-                   <img src="" alt="" /> 
+                   {/* <img src="" alt="" />  */}
                 </div>
                 <div>
                     <ul>
