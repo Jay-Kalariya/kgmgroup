@@ -2,7 +2,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Abc from "@/components/headingtextdemo/Textdemo";
-import Howwework from "@/components/howwework/Howwework";
+// import Howwework from "@/components/howwework/Howwework";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
 import Lenis from "@studio-freight/lenis";
@@ -40,14 +40,8 @@ export default function Home() {
       <Model />
       <Abc />
       <PortfolioCard />
-      <Howwework />
-
       {/* <Howwework /> */}
       <FourCards />
-
-
-
-
       {/* <SixcardItem /> */}
 
       {/* <p>Header</p> */}
