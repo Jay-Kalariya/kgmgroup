@@ -6,6 +6,7 @@ import Button from "@/components/Button/Button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import FourCards from "../fourcards/FourCards";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +47,7 @@ function Howwework() {
           </div>
         </div>
         <div>
-          <HowWeWorkCard />
+          <FourCards />
         </div>
       </div>
     </div>

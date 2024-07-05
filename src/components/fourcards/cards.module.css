@@ -242,3 +242,17 @@
     text-align: right;
   }
   
+  .char {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 1em; /* Adjust as needed for the font size */
+    line-height: 1em; /* Adjust as needed for the font size */
+  }
+  
+  .char span {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  
