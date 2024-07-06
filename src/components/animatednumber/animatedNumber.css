@@ -1,0 +1,36 @@
+
+
+
+.letter-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.letter-wrap * {
+  pointer-events: none;
+}
+
+.letter-wrap__word {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.letter-wrap__char {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.letter-wrap__char-inner {
+  display: inline-block;
+  position: relative;
+}
+
+.letter-wrap__char-inner:after {
+  content: attr(data-letter);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: white;
+}
