@@ -241,16 +241,18 @@
     align-self: flex-end;
     text-align: right;
   }
-  @media (max-width: 575px){
-    .trHomeAchievedNumber {
-      font-size: 4rem;
-      letter-spacing: -3px;
-      line-height: normal;
-    }
-    .BigTextHeadingInner{
-      padding-bottom: 5rem;
-    }
+  
+  .char {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 1em; /* Adjust as needed for the font size */
+    line-height: 1em; /* Adjust as needed for the font size */
   }
-  .BigTextHeadingInner{
-    padding-bottom: 10rem;
+  
+  .char span {
+    display: block;
+    position: absolute;
+    width: 100%;
   }
+  
