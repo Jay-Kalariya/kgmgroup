@@ -1,6 +1,7 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import gsap from 'gsap';
 import styles from './SixcardItem.module.css';
 
 // Import images
@@ -13,12 +14,36 @@ import dribbble6 from '../../images/img1.webp';
 
 const images = [dribbble1, dribbble2, dribbble3, dribbble4, dribbble5, dribbble6];
 
-const SixcardItem = () => {
+const SixcardItem = ({xDirection , RotateDirection}) => {
+  const imageRef = useRef(null);
+  const cardRef = useRef(null);
+  useEffect(() => {
+    // GSAP animation for the card
+    gsap.fromTo(
+      imageRef.current,
+      {
+        x: xDirection,
+        rotate: RotateDirection,
+      },
+      {
+        x: 0,
+        rotate: 0,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: "top bottom",
+          end: "top center",
+          scrub: true,
+        },
+      }
+    );
+  
+  }, [xDirection, RotateDirection]);
   return (
-    <section className={styles.dribbbleSection} >
-      <div className={styles.container}>
+    <section ref={imageRef} className={styles.dribbbleSection} >
+      <div  className={styles.container}>
         <div className={styles.wrapper}>
-          <div className="float-none inline-block m-auto z-1">
+          <div ref={cardRef} className="">
             <Image
               alt="Trionn"
               width="200"
@@ -40,7 +65,7 @@ const SixcardItem = () => {
           </div>
           <div className="fadeUp">
             <a
-              className="button magnetic cursorHoverable cursorHoverablePlay z-2 float-none inline-block m-auto z-1"
+              className="button magnetic cursorHoverable cursorHoverablePlay"
               aria-label="View Dribbble"
               target="_blank"
               rel="noopener noreferrer"
