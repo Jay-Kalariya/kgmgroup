@@ -12,7 +12,7 @@
     height: 450px;
     position: relative;
   }
-  img {
+  /* img {
     object-fit: cover;
-  }
+  } */
 }

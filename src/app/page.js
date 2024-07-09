@@ -7,7 +7,7 @@ import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
 import Lenis from "@studio-freight/lenis";
 import FourCards from "@/components/fourcards/FourCards";
-// import SixcardItem from "@/components/sixcarditem/SixcardItem";
+import SixcardItem from "@/components/sixcarditem/SixcardItem";
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -37,13 +37,12 @@ export default function Home() {
 
   return (
     <div data-scroll-container>
-      <Model />
-      <Abc />
-      <PortfolioCard />
+      {/* <Model /> */}
+      {/* <Abc /> */}
+      {/* <PortfolioCard /> */}
       {/* <Howwework /> */}
       <FourCards />
-      {/* <SixcardItem /> */}
-
+      <SixcardItem />
       {/* <p>Header</p> */}
     </div>
   );

@@ -5,16 +5,16 @@ import gsap from 'gsap';
 import styles from './SixcardItem.module.css';
 
 // Import images
-import dribbble1 from '../../images/img1.webp';
-import dribbble2 from '../../images/img1.webp';
-import dribbble3 from '../../images/img1.webp';
-import dribbble4 from '../../images/img1.webp';
-import dribbble5 from '../../images/img1.webp';
-import dribbble6 from '../../images/img1.webp';
+import dribbble1 from '../../images/sixcards1.jpg';
+import dribbble2 from '../../images/sixcards2.jpg';
+import dribbble3 from '../../images/sixcards3.jpg';
+import dribbble4 from '../../images/sixcards4.jpg';
+import dribbble5 from '../../images/sixcards5.jpg';
+import dribbble6 from '../../images/sixcards6.jpg';
 
 const images = [dribbble1, dribbble2, dribbble3, dribbble4, dribbble5, dribbble6];
 
-const SixcardItem = ({xDirection , RotateDirection}) => {
+const SixcardItem = ({ xDirection, RotateDirection }) => {
   const imageRef = useRef(null);
   const cardRef = useRef(null);
   useEffect(() => {
@@ -37,11 +37,11 @@ const SixcardItem = ({xDirection , RotateDirection}) => {
         },
       }
     );
-  
+
   }, [xDirection, RotateDirection]);
   return (
     <section ref={imageRef} className={styles.dribbbleSection} >
-      <div  className={styles.container}>
+      <div className={styles.container}>
         <div className={styles.wrapper}>
           <div ref={cardRef} className="">
             <Image
@@ -57,7 +57,7 @@ const SixcardItem = ({xDirection , RotateDirection}) => {
           <div className={`${styles.sectionTitle} ${styles.container}`}>
             <div className={styles.sectionTitleLeft}>
               <h4 className="headingAnimation">
-                Like a lions roar echoing through 
+                Like a lions roar echoing through
                 the jungle a hint of our creative
                 minds emerges
               </h4>

@@ -4,7 +4,12 @@
     overflow: hidden;
     text-align: center;
   }
-  
+  .fadeUp{
+    max-width: 100% !important;
+        /* object-fit: cover; */
+        height: 100% !important;
+        object-fit: unset !important;
+  }
   @media (min-width: 1140px) {
     .dribbbleSection {
       padding-bottom: 0;
@@ -78,6 +83,10 @@
   }
   
   .post img {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100% !important;
+    /* object-fit: cover; */
+    height: 100% !important;
+    object-fit: unset !important;
   }
   
