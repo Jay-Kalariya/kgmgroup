@@ -1,0 +1,16 @@
+.swiper-wrapper{
+    display: flex;
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease !important;
+  }
+  
+  .swiper-slide.dragged {
+    transform: scale(0.95) !important;
+  }
+  
+  .swiper-slide.active {
+    transform: scale(1.05) !important;
+  }
+  

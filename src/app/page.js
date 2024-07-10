@@ -1,13 +1,13 @@
-// import BigText from "@/components/bigTextHeading/BigText";
+
 "use client";
 import { useState, useEffect } from "react";
 import Abc from "@/components/headingtextdemo/Textdemo";
-// import Howwework from "@/components/howwework/Howwework";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
 import Lenis from "@studio-freight/lenis";
 import FourCards from "@/components/fourcards/FourCards";
 import SixcardItem from "@/components/sixcarditem/SixcardItem";
+import Slider from "@/components/slider/Slider";
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -40,9 +40,9 @@ export default function Home() {
       <Model />
       <Abc />
       <PortfolioCard />
-      {/* <Howwework /> */}
       <FourCards />
       <SixcardItem />
+      <Slider />
       {/* <p>Header</p> */}
     </div>
   );
