@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@react-three/fiber": "^7.0.29",
     "@splinetool/react-spline": "^4.0.0",
     "@studio-freight/lenis": "^1.0.42",
@@ -18,7 +19,9 @@
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "swiper": "^11.1.4"
+    "react-hook-form": "^7.52.1",
+    "swiper": "^11.1.4",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "^8",

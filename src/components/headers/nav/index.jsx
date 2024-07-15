@@ -16,13 +16,13 @@ const links = [
     // src: image1,
   },
   {
-    title: "Services",
-    href: "/",
+    title: "About - Us",
+    href: "/about-us",
     // src: image2,
   },
   {
-    title: "Know-us",
-    href: "/",
+    title: "Contact - Us",
+    href: "/contact-us",
     // src: image1,
   },
   // {
@@ -40,11 +40,7 @@ const links = [
   //   href: "/",
   //   // src: image2,
   // },
-  {
-    title: "Contact-us",
-    href: "/",
-    // src: image1,
-  },
+ 
 ];
 
 export default function NavSection({ navLinkHandler }) { 
