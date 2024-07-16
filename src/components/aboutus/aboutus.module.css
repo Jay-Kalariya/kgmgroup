@@ -9,11 +9,11 @@
   align-items: center;
   gap: 4rem;
 }
-.MainFlexOne{
-    width: 50%;
+.MainFlexOne {
+  width: 50%;
 }
-.AboutImageContainer{
-    width: 50%;
+.AboutImageContainer {
+  width: 50%;
 }
 .text1 {
   font-size: 50px;
@@ -31,80 +31,80 @@
 }
 
 .MainButton {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .readMoreButtonOuter {
-    position: relative;
-    overflow: hidden;
-    height: 3.25rem;
-    padding: 0 2rem;
-    background: rgb(254, 197, 84);
-    background-size: 400%;
-    color: black;
-    border: none;
-    font-size: 18px;
-    line-height: 16px;
-    font-family: "futura_medium";
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    width: fit-content;
-  }
-  .readMoreButtonOuter .readMoreButton {
-    position: relative;
-    z-index: 1;
-  }
-  .readMoreButtonOuter::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: white;
-    transition: all 0.475s;
-  }
-  .readMoreButtonOuter:hover::before {
-    transform: scaleX(1);
-  }
+  position: relative;
+  overflow: hidden;
+  height: 3.25rem;
+  padding: 0 2rem;
+  background: rgb(254, 197, 84);
+  background-size: 400%;
+  color: black;
+  border: none;
+  font-size: 18px;
+  line-height: 16px;
+  font-family: "futura_medium";
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+}
+.readMoreButtonOuter .readMoreButton {
+  position: relative;
+  z-index: 1;
+}
+.readMoreButtonOuter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: white;
+  transition: all 0.475s;
+}
+.readMoreButtonOuter:hover::before {
+  transform: scaleX(1);
+}
 @media (max-width: 1440px) {
   .AboutUsMainContainer {
     padding-left: 2rem;
     padding-right: 0rem;
   }
-  .AboutUsimg{
+  .AboutUsimg {
     width: 95%;
     object-fit: contain;
   }
 }
-@media (max-width: 768px){
-    .AboutUsFlex{
-        flex-direction: column-reverse;
-    }
-    .AboutUsMainContainer {
-        padding-right: 2rem;
-      } 
-    .MainFlexOne{
-        width: 100%;
-    }
-    .AboutImageContainer{
-        width: 100%;
-    }
-    .AboutUsimg{
-        width: 100%;
-        height: auto;
-    }
-    .AboutUsFlex{
-        gap: 3rem;
-    }
+@media (max-width: 768px) {
+  .AboutUsFlex {
+    flex-direction: column-reverse;
+  }
+  .AboutUsMainContainer {
+    padding-right: 2rem;
+  }
+  .MainFlexOne {
+    width: 100%;
+  }
+  .AboutImageContainer {
+    width: 100%;
+  }
+  .AboutUsimg {
+    width: 100%;
+    height: auto;
+  }
+  .AboutUsFlex {
+    gap: 3rem;
+  }
 }
-@media (max-width: 575px){
-    .text2{
-        font-size: 18px;
-    }
+@media (max-width: 575px) {
+  .text2 {
+    font-size: 18px;
+  }
 }

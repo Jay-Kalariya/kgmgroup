@@ -1,0 +1,26 @@
+
+
+a.linkHover  {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 17px;
+  &:hover{
+    span{
+      transform: translateY(-15px);
+      overflow: hidden;
+      color: #FFBC37;
+    }
+  }
+  span{
+    display: block;
+    transition: all 0.5s;
+  }
+ 
+}
