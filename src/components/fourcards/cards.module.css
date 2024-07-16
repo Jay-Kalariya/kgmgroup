@@ -9,7 +9,9 @@
     padding-top: 6rem !important;
     padding-bottom: 10rem;
   }
-  
+  .BigTextHeadingInner{
+    padding-bottom: 8rem;
+  }
   .trHomeAchievedContainer {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -79,7 +81,8 @@
   
   .trHomeAchievedBlock {
     will-change: transform, color, background;
-    background: rgba(31, 32, 34, 0.4);
+    /* background: rgba(31,32,34,.4); */
+    background: rgb(72 74 79 / 40%);
     position: relative;
     z-index: 0;
     display: inline-block;
