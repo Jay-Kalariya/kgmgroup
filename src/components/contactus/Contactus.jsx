@@ -24,7 +24,10 @@ const Contactus = () => {
     return (
         <section className="MainContactForm">
             <div className="contact-form-container">
-                <h2>SAY HELLO! GET A QUOTE</h2>
+                <div className="HeaderMain">
+                <p className="HeaderTextTitle">Let’s work together.</p>
+                <p className="HeaderTextTitleInner">Interested in working together? Fill out some info and we will be in touch shortly! We can't wait to hear from you!</p>
+                </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="FlexContainer">
                         <div className="form-group">
