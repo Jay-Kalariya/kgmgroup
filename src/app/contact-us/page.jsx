@@ -7,8 +7,9 @@ function ContactUs() {
             "Contact Us | KGM Group";
     });
     return (
-        // <h1>contact-us</h1>
-        <ContactPage />
+        <>
+            <ContactPage />
+        </>
     )
 }
 export default ContactUs;

@@ -6,35 +6,29 @@ import border from "@/images/yellow_footer_border.svg";
 import Image from "next/image";
 const footerUrls = [
   {
-    url1: "#",
-    url1Text: "About",
-    url2: "#",
-    url2Text: "Annual Return",
+    url1: "/about-us",
+    url1Text: "About Us",
+    url2: "/contact-us",
+    url2Text: "Contact Us",
   },
   {
     url1: "#",
-    url1Text: "Corporate Social Responsibility",
+    url1Text: "KGM Group Pty Ltd | ACN 657 588 988",
     url2: "#",
-    url2Text: "Vigil Mechanism Policy",
+    url2Text: "Global Consultancy Services",
   },
-  {
-    url1: "#",
-    url1Text: "Career",
-    url2: "#",
-    url2Text: "Privacy Policy",
-  },
-  {
-    url1: "#",
-    url1Text: "Copyright 2024",
-    url2: "#",
-    url2Text: "kgm group",
-  },
-  {
-    url1: "tel:9900000000",
-    url1Text: "+91 9900000000",
-    url2: "mailto:info@kgmgroup.com",
-    url2Text: "info@kgmgroup.com",
-  },
+  // {
+  //   url1: "#",
+  //   url1Text: "Copyright 2024",
+  //   url2: "#",
+  //   url2Text: "kgm group",
+  // },
+  // {
+  //   url1: "tel:9900000000",
+  //   url1Text: "+91 9900000000",
+  //   url2: "mailto:info@kgmgroup.com",
+  //   url2Text: "info@kgmgroup.com",
+  // },
 ];
 
 const Footer = () => {
@@ -43,6 +37,7 @@ const Footer = () => {
   return (
     (pathname === "/" || pathname === "/store") && (
       <footer>
+      
         <nav>
           {footerUrls.map((item, index) => (
             <ul key={index}>
