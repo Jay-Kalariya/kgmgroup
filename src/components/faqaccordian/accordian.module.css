@@ -1,0 +1,114 @@
+
+.rcAccordionToggle {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 20px;
+    transition: 0.3s;
+}
+.containerFluid{
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+}
+.rcAccordionToggleActive {
+    border-bottom: none;
+    /* background-color: #5a8dee; */
+}
+
+.rcAccordionToggleActive .rcAccordionIcon {
+    transform: rotate(180deg);
+    color: #fff;
+}
+.rcAccordionCard {
+    padding: 0 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.rcAccordionCard:last-child {
+    margin-bottom: 0;
+}
+
+.rcAccordionTitle {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 0;
+    color: white;
+    transition: 0.3s;
+}
+
+.rcAccordionToggleActive .rcAccordionTitle {
+    color: #fff;
+}
+
+.rcAccordionIcon {
+    position: relative;
+    top: 2px;
+    transition: 0.35s;
+    font-size: 12px;
+}
+
+.rcAccordionBody {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 20px 18px;
+}
+
+.rcAccordionBody p {
+    margin-bottom: 0;
+    font-size: 18px;
+    width: 95%;
+    font-weight: 400;
+    color: white;
+}
+
+.rcCollapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
+.rcCollapseShow {
+    height: auto;
+}
+
+
+.FaqText{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding: 40px 0;
+}
+@media (max-width: 768px){
+    .rcAccordionTitle{
+        width: 85%;
+    }
+    .rcAccordionCard{
+        padding: 0 25px;
+    }
+    .FaqText{
+        font-size: 40px;
+    }
+}
+@media (max-width: 575px){
+    .FaqText{
+        font-size: 30px;
+    }
+}
+@media(max-width: 425px){
+    .rcAccordionCard{
+        padding: 0 20px;
+    }
+    .FaqText{
+        font-size: 20px;
+        padding: 30px 20px;
+    }
+}

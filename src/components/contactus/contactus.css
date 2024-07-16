@@ -12,7 +12,17 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  
+  .HeaderMain{
+    text-align: center;
+  }
+  .HeaderTextTitle{
+    font-size: 80px;
+    letter-spacing: 0.05em;
+  }
+  .HeaderTextTitleInner{
+    font-size: 20px;
+    padding: 40px 0;
+  }
   .form-group {
     margin-bottom: 15px;
     height: 81px;
@@ -27,16 +37,18 @@
   
   .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
   
   .form-group input,
   .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 16px 0 16px 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: #333;
+    font-size: 15px;
     color: #fff;
   }
   
