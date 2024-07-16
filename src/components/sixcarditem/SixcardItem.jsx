@@ -39,8 +39,7 @@ const SixcardItem = () => {
           <div className="fadeUp">
             <a
               className="button magnetic cursorHoverable cursorHoverablePlay"
-              target="_blank"
-              href="#"
+              href="/about-us"
             >
               View Dribbble
               {/* <span className="buttonBackground">View Dribbble</span> */}
@@ -52,31 +51,43 @@ const SixcardItem = () => {
             ImageSrc={dribbble1}
             xDirection={"-300"}
             RotateDirection={"-20"}
+            scrollTriggerConfig={"center bottom"}
+            scrollTriggerConfigend={"center"}
           />
           <SixcardImages
             ImageSrc={dribbble2}
             xDirection={"300"}
             RotateDirection={"20"}
+            scrollTriggerConfig={"center bottom"}
+            scrollTriggerConfigend={"center"}
           />
           <SixcardImages
             ImageSrc={dribbble3}
-            xDirection={"-350"}
-            RotateDirection={"-30"}
+            xDirection={"-450"}
+            RotateDirection={"-10"}
+            scrollTriggerConfig={"top bottom"}
+            scrollTriggerConfigend={"top center"}
           />
           <SixcardImages
             ImageSrc={dribbble4}
-            xDirection={"350"}
-            RotateDirection={"30"}
+            xDirection={"450"}
+            RotateDirection={"10"}
+            scrollTriggerConfig={"top bottom"}
+            scrollTriggerConfigend={"top center"}
           />
           <SixcardImages
             ImageSrc={dribbble5}
             xDirection={"-350"}
-            RotateDirection={"-30"}
+            RotateDirection={"-20"}
+            scrollTriggerConfig={"top bottom"}
+            scrollTriggerConfigend={"top center"}
           />
           <SixcardImages
             ImageSrc={dribbble6}
             xDirection={"350"}
-            RotateDirection={"30"}
+            RotateDirection={"20"}
+            scrollTriggerConfig={"top bottom"}
+            scrollTriggerConfigend={"top center"}
           />
         </div>
       </div>
