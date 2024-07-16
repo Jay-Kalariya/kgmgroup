@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div data-scroll-container>
-      {/* <Model /> */}
+      <Model />
       <Abc />
       <PortfolioCard />
       <FourCards />
