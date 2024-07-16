@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import styles from "./SixcardItem.module.css";
 
-const SixcardImages = ({ xDirection, RotateDirection, ImageSrc }) => {
+const SixcardImages = ({ xDirection, RotateDirection, ImageSrc , scrollTriggerConfig, scrollTriggerConfigend}) => {
   const imageRef = useRef(null);
   const cardRef = useRef(null);
   useEffect(() => {
@@ -20,13 +20,13 @@ const SixcardImages = ({ xDirection, RotateDirection, ImageSrc }) => {
         duration: 0.5,
         scrollTrigger: {
           trigger: cardRef.current,
-          start: "top bottom",
-          end: "top center",
-          scrub: true,
+          start: scrollTriggerConfig,
+          end: scrollTriggerConfigend,
+          scrub: 1,
         },
       }
     );
-  }, [xDirection, RotateDirection]);
+  }, [xDirection, RotateDirection, scrollTriggerConfig , scrollTriggerConfigend]);
   return (
     <section ref={imageRef} className={styles.dribbbleSection}>
       <div ref={cardRef} className={styles.container}>

@@ -5,7 +5,7 @@
   text-align: center;
 }
 .MainContainer {
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   padding-bottom: 8rem;
 }
 .sectionTitleLeft {
@@ -35,9 +35,9 @@
 }
 @media (min-width: 1140px) {
   .dribbbleSection {
-    padding-bottom: 25px;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    /* padding-bottom: 25px; */
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 .sectionTitle {
