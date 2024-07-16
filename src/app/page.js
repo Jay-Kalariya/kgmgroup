@@ -8,6 +8,7 @@ import Lenis from "@studio-freight/lenis";
 import FourCards from "@/components/fourcards/FourCards";
 import SixcardItem from "@/components/sixcarditem/SixcardItem";
 import Slider from "@/components/slider/Slider";
+import AccordionItem from "@/components/faqaccordian/faqdata";
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -43,6 +44,7 @@ export default function Home() {
       <FourCards />
       <SixcardItem />
       <Slider />
+      <AccordionItem />
       {/* <p>Header</p> */}
     </div>
   );
