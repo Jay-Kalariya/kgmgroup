@@ -1,6 +1,7 @@
-function AboutUs() {
-    return(
-        <h1>about-us</h1>
+import AboutUs from "@/components/aboutus/page";
+const AboutUsMain = () => {
+    return (
+        <AboutUs />
     )
 }
-export default AboutUs;
+export default AboutUsMain;

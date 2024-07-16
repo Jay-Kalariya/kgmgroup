@@ -1,0 +1,80 @@
+.MainContactForm{
+    padding-top: 6rem;
+}
+.contact-form-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    height: 81px;
+    width: 100%;
+  }
+  .FlexContainer{
+    display: flex;
+    gap: 3rem;
+    /* justify-content: space-between; */
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+  }
+  
+  .form-group p {
+    color: #ff6b6b;
+    margin: 5px 0 0;
+    font-size: 15px;
+  }
+  .ButtonSubmit{
+    padding: 60px 0 0;
+  }
+  .ButtonInner {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ButtonInner:hover {
+    background: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 15px;
+    }
+    .FlexContainer{
+        flex-direction: column;
+        gap: 0rem;
+    }
+  
+    .ButtonInner {
+      font-size: 14px;
+    }
+  }
+  
