@@ -15,7 +15,7 @@ const AboutUs = () => {
     return (
         <div className={styles.AboutUsMainContainer}>
             <motion.div
-                className={styles.text1}
+                
                 initial={{
                     opacity: 0,
                     y: 50,
@@ -29,7 +29,7 @@ const AboutUs = () => {
                 }}
                 viewport={{ once: true }}
             >
-                <p >Behind the Scenes</p>
+                <p className={styles.text1} >Behind the Scenes</p>
                 </motion.div>
             <div className={styles.AboutUsFlex}>
                 <div className={styles.MainFlexOne}>

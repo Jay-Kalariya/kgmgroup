@@ -1,63 +1,71 @@
-.MainContactForm{
-    padding-top: 6rem;
+.MainContactForm {
+  padding-top: 6rem;
 }
+
 .contact-form-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  .contact-form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .HeaderMain{
-    text-align: center;
-  }
-  .HeaderTextTitle{
-    font-size: 80px;
-    letter-spacing: 0.05em;
-  }
-  .HeaderTextTitleInner{
-    font-size: 20px;
-    padding: 40px 0;
-  }
-  .form-group {
-    margin-bottom: 15px;
-    height: 100px;
-    width: 100%;
-  }
-  .FlexContainer{
-    display: flex;
-    gap: 3rem;
-    /* justify-content: space-between; */
-    width: 100%;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 16px 0 16px 10px;
-    border: 1px solid #ccc;
-    /* border-radius: 5px; */
-    background: #333;
-    font-size: 15px;
-    color: #fff;
-  }
-  
-  .form-group p {
-    color: #ff6b6b;
-    margin: 5px 0 0;
-    font-size: 15px;
-  }
-  .ButtonSubmit{
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HeaderMain {
+  text-align: center;
+}
+
+.HeaderTextTitle {
+  font-size: 80px;
+  letter-spacing: 0.05em;
+}
+
+.HeaderTextTitleInner {
+  font-size: 20px;
+  padding: 40px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  height: 100px;
+  width: 100%;
+}
+
+.FlexContainer {
+  display: flex;
+  gap: 3rem;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px 0 16px 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  /* border-radius: 5px; */
+  background: #333;
+  font-size: 15px;
+  color: #fff;
+}
+
+.form-group p {
+  color: #ff6b6b;
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+
+/* .ButtonSubmit{
     padding: 60px 0 0;
   }
   .ButtonInner {
@@ -74,19 +82,72 @@
   
   .ButtonInner:hover {
     background: #45a049;
+  } */
+
+.ButtonOuter {
+  padding-top: 3rem;
+}
+
+.ButtonSubmit {
+  position: relative;
+  overflow: hidden;
+  height: 3.25rem;
+  padding: 0 3rem;
+  background: rgb(254, 197, 84);
+  background-size: 400%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  line-height: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.ButtonInner {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.ButtonSubmit .ButtonInner {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.ButtonSubmit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: white;
+  transition: all 0.475s;
+}
+
+.ButtonSubmit:hover::before {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 15px;
   }
-  
-  @media (max-width: 768px) {
-    .contact-form-container {
-      padding: 15px;
-    }
-    .FlexContainer{
-        flex-direction: column;
-        gap: 0rem;
-    }
-  
-    .ButtonInner {
-      font-size: 14px;
-    }
+
+  .FlexContainer {
+    flex-direction: column;
+    gap: 0rem;
   }
-  
+
+  .ButtonInner {
+    font-size: 14px;
+  }
+}

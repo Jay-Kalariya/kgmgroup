@@ -86,10 +86,12 @@ const Contactus = () => {
             />
             <p>{errors.project?.message}</p>
           </div>
-          <div className="ButtonSubmit">
-            <button type="submit" className="ButtonInner">
-              Submit
-            </button>
+          <div className="ButtonOuter">
+            <div className="ButtonSubmit">
+              <button type="submit" className="ButtonInner">
+                Submit
+              </button>
+            </div>
           </div>
         </form>
       </div>
