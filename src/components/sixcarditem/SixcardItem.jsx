@@ -3,12 +3,12 @@ import Image from "next/image";
 import styles from "./SixcardItem.module.css";
 import SixcardImages from "./SixcardImages";
 // Import images
-import dribbble1 from "../../imagesNew/FirstCardOne.jpg";
-import dribbble2 from "../../imagesNew/FirstCardTwo.jpg";
-import dribbble3 from "../../imagesNew/FirstCardThree.jpg";
-import dribbble4 from "../../imagesNew/FirstCardeFour.jpg";
-import dribbble5 from "../../imagesNew/FirstCardFive.jpg";
-import dribbble6 from "../../imagesNew/FirstCardSix.jpg";
+import dribbble1 from "../../ImagesNew/FirstCardOne.jpg";
+import dribbble2 from "../../ImagesNew/FirstCardTwo.jpg";
+import dribbble3 from "../../ImagesNew/FirstCardThree.jpg";
+import dribbble4 from "../../ImagesNew/FirstCardeFour.jpg";
+import dribbble5 from "../../ImagesNew/FirstCardFive.jpg";
+import dribbble6 from "../../ImagesNew/FirstCardSix.jpg";
 
 
 const SixcardItem = () => {
