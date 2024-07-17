@@ -62,7 +62,9 @@ const Footer = () => {
             </ul>
           ))}
         </nav>
+        <div className="ImageBorder">
         <Image src={border} alt="border" />
+        </div>
         <div className="copyright">© 2024 All Rights Reserved</div>
       </footer>
     )
