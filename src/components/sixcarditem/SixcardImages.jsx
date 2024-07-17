@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import styles from "./SixcardItem.module.css";
 
-const SixcardImages = ({ xDirection, RotateDirection, ImageSrc , scrollTriggerConfig, scrollTriggerConfigend}) => {
+const SixcardImages = ({PaddingImg, xDirection, RotateDirection, ImageSrc , scrollTriggerConfig, scrollTriggerConfigend}) => {
   const imageRef = useRef(null);
   const cardRef = useRef(null);
   useEffect(() => {
@@ -28,10 +28,10 @@ const SixcardImages = ({ xDirection, RotateDirection, ImageSrc , scrollTriggerCo
     );
   }, [xDirection, RotateDirection, scrollTriggerConfig , scrollTriggerConfigend]);
   return (
-    <section ref={imageRef} className={styles.dribbbleSection}>
+    <section ref={imageRef} className={styles.dribbbleSection} style={{ margin: PaddingImg }}>
       <div ref={cardRef} className={styles.container}>
         {/* <div className={styles.posts}> */}
-          <div className={styles.post}>
+          <div className={styles.post} >
             <Image
               alt="Trionn"
               data-nimg="1"

@@ -3,12 +3,12 @@ import Image from "next/image";
 import styles from "./SixcardItem.module.css";
 import SixcardImages from "./SixcardImages";
 // Import images
-import dribbble1 from "../../images/New_Img1.jpg";
-import dribbble2 from "../../images/New_Img9.jpg";
-import dribbble3 from "../../images/New_Img3.jpg";
-import dribbble4 from "../../images/New_Img5.jpg";
-import dribbble5 from "../../images/New_Img8.jpg";
-import dribbble6 from "../../images/New_Img6.jpg";
+import dribbble1 from "../../imagesNew/FirstCardOne.jpg";
+import dribbble2 from "../../imagesNew/FirstCardTwo.jpg";
+import dribbble3 from "../../imagesNew/FirstCardThree.jpg";
+import dribbble4 from "../../imagesNew/FirstCardeFour.jpg";
+import dribbble5 from "../../imagesNew/FirstCardFive.jpg";
+import dribbble6 from "../../imagesNew/FirstCardSix.jpg";
 
 
 const SixcardItem = () => {
@@ -53,6 +53,7 @@ const SixcardItem = () => {
             RotateDirection={"-20"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
+            PaddingImg={"0px"}
           />
           <SixcardImages
             ImageSrc={dribbble2}
@@ -60,6 +61,7 @@ const SixcardItem = () => {
             RotateDirection={"20"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
+            PaddingImg={"0px"}
           />
           <SixcardImages
             ImageSrc={dribbble3}
@@ -67,6 +69,7 @@ const SixcardItem = () => {
             RotateDirection={"-10"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
+            PaddingImg={"-100px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble4}
@@ -74,20 +77,23 @@ const SixcardItem = () => {
             RotateDirection={"10"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
+            PaddingImg={"-100px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble5}
-            xDirection={"-350"}
-            RotateDirection={"-20"}
+            xDirection={"-450"}
+            RotateDirection={"-10"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
+            PaddingImg={"-113px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble6}
-            xDirection={"350"}
-            RotateDirection={"20"}
+            xDirection={"450"}
+            RotateDirection={"10"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
+            PaddingImg={"-113px 0px 0px 0px"}
           />
         </div>
       </div>
