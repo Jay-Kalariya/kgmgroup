@@ -51,7 +51,7 @@ const AboutUs = () => {
                     </p>
                     {!showFullText && (
                         <p className={styles.text2}>
-                            Under Zaid's leadership, our team is dedicated to fostering close
+                            Under Zaids leadership, our team is dedicated to fostering close
                             collaborations with each client. Recognizing that every business
                             has its unique character and challenges, we delve deep to
                             understand these nuances, ensuring tailored strategies that align
@@ -73,7 +73,7 @@ const AboutUs = () => {
                     {showFullText && (
                         <>
                             <p className={styles.text2}>
-                                Under Zaid's leadership, our team is dedicated to fostering
+                                Under Zaids leadership, our team is dedicated to fostering
                                 close collaborations with each client. Recognizing that every
                                 business has its unique character and challenges, we delve deep
                                 to understand these nuances, ensuring tailored strategies that
