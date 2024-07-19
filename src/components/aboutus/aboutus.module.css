@@ -4,23 +4,45 @@
   padding-right: 10rem;
 }
 .AboutUsFlex {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
+  align-items: center; */
+  /* gap: 4rem; */
 }
 .MainFlexOne {
-  width: 50%;
+  width: 100%;
+  padding-top: 1rem;
 }
 .AboutImageContainer {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.TextUpper {
+  width: 60%;
+}
+.TextUpperTwo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.TextUpperTwoSecond{
+  /* display: flex; */
 }
 .text1 {
-  font-size: 50px;
-  padding: 50px 0;
+  font-size: 70px;
+  padding: 100px 0;
   line-height: 40px;
+  text-align: center;
 }
 .text2 {
+  font-size: 20px;
+  padding: 50px 0 30px 0;
+  line-height: 28px;
+  font-weight: 300;
+}
+.text2one {
+  width: 50%;
   font-size: 20px;
   padding: 0 0 30px 0;
   line-height: 28px;
@@ -73,12 +95,14 @@
 }
 @media (max-width: 1440px) {
   .AboutUsMainContainer {
-    padding-left: 2rem;
-    padding-right: 0rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .AboutUsimg {
-    width: 95%;
-    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
@@ -89,9 +113,6 @@
     padding-right: 2rem;
   }
   .MainFlexOne {
-    width: 100%;
-  }
-  .AboutImageContainer {
     width: 100%;
   }
   .AboutUsimg {

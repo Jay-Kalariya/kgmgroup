@@ -49,7 +49,7 @@ const SixcardItem = () => {
         <div className={styles.posts}>
           <SixcardImages
             ImageSrc={dribbble1}
-            xDirection={"-300"}
+            xDirection={"-350"}
             RotateDirection={"-20"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
@@ -57,7 +57,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble2}
-            xDirection={"300"}
+            xDirection={"350"}
             RotateDirection={"20"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
@@ -65,7 +65,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble3}
-            xDirection={"-450"}
+            xDirection={"-550"}
             RotateDirection={"-10"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
@@ -73,7 +73,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble4}
-            xDirection={"450"}
+            xDirection={"550"}
             RotateDirection={"10"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
@@ -81,16 +81,16 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble5}
-            xDirection={"-450"}
-            RotateDirection={"-10"}
+            xDirection={"-400"}
+            RotateDirection={"-30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
             PaddingImg={"-113px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble6}
-            xDirection={"450"}
-            RotateDirection={"10"}
+            xDirection={"400"}
+            RotateDirection={"30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
             PaddingImg={"-113px 0px 0px 0px"}

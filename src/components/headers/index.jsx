@@ -6,7 +6,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { opacity } from "./anim";
 import NavSection from "./nav/index";
-
+import Image from "next/image";
+import logoImage from "@/images/logo_final.png";
 export default function NewNav() {
   const [isActive, setIsActive] = useState(false);
   // const [toggle, setToggle] = useState(false);
@@ -36,8 +37,8 @@ export default function NewNav() {
           // }}
           
         >
-          <p>Logo</p>
-          {/* <img src={logoImage} alt="logoImage" /> */}
+          {/* <p>Logo</p> */}
+          <Image src={logoImage} alt="logoImage" />
         </Link>
         <div
           onClick={() => {
