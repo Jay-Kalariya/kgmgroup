@@ -5,8 +5,9 @@ footer {
   }
   nav {
     display: flex;
-    justify-content: flex-end;
-    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 100px;
     @media (max-width: 1600px) {
       gap: 60px;
     }

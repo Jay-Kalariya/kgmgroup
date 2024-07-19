@@ -4,6 +4,7 @@ import LinkHover from "../linkHover/LinkHover";
 import { usePathname } from "next/navigation";
 import border from "@/images/yellow_footer_border.svg";
 import Image from "next/image";
+import image_logo from "@/images/logo_final.png"
 const footerUrls = [
   {
     url1: "/about-us",
@@ -39,6 +40,9 @@ const Footer = () => {
       <footer>
       
         <nav>
+        <div>
+        <Image src={image_logo} alt="none"/>
+      </div>
           {footerUrls.map((item, index) => (
             <ul key={index}>
               <li>
