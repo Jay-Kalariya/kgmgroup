@@ -81,19 +81,19 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble5}
-            xDirection={"-400"}
+            xDirection={"-250"}
             RotateDirection={"-30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
-            PaddingImg={"-113px 0px 0px 0px"}
+            PaddingImg={"-170px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble6}
-            xDirection={"400"}
+            xDirection={"250"}
             RotateDirection={"30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
-            PaddingImg={"-113px 0px 0px 0px"}
+            PaddingImg={"-170px 0px 0px 0px"}
           />
         </div>
       </div>
