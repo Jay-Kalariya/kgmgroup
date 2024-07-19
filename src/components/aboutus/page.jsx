@@ -35,7 +35,21 @@ const AboutUs = () => {
       </div>
       <div className={styles.AboutUsFlex}>
         <div className={styles.MainFlexOne}>
-          <div className={styles.TextUpper}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            // viewport={{ once: true }}
+            className={styles.TextUpper}
+          >
             <p className={styles.text2}>
               <span className={styles.BoldText}>Zaid Hassoneh</span> is the
               Managing Director, bringing with him an unparalleled breadth of
@@ -52,9 +66,21 @@ const AboutUs = () => {
               like the Asia Pacific, USA, Europe, and the Middle East, offers
               our firm a rich mosaic of global insights and approaches.
             </p>
-          </div>
+          </motion.div>
           {/* {!showFullText && ( */}
-          <div className={styles.TextUpperTwo}>
+          <motion.div 
+           initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          className={styles.TextUpperTwo}>
             <p className={styles.text2one}>
               Under Zaids leadership, our team is dedicated to fostering close
               collaborations with each client. Recognizing that every business
@@ -64,19 +90,42 @@ const AboutUs = () => {
               but to amplify the strengths and advantages unique to each
               enterprise.{" "}
             </p>
-          </div>
-          <div className={styles.TextUpperTwo}>
-              <p className={styles.text2one}>
-                Under Zaids leadership, our team is dedicated to fostering close
-                collaborations with each client. Recognizing that every business
-                has its unique character and challenges, we delve deep to
-                understand these nuances, ensuring tailored strategies that
-                align perfectly with their goals. Our commitment is not just to
-                identify but to amplify the strengths and advantages unique to
-                each enterprise.
-              </p>
-            </div>
-            <div className={styles.TextUpperTwoSecond}>
+          </motion.div>
+          <motion.div
+           initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+           className={styles.TextUpperTwo}>
+            <p className={styles.text2one}>
+              Under Zaids leadership, our team is dedicated to fostering close
+              collaborations with each client. Recognizing that every business
+              has its unique character and challenges, we delve deep to
+              understand these nuances, ensuring tailored strategies that align
+              perfectly with their goals. Our commitment is not just to identify
+              but to amplify the strengths and advantages unique to each
+              enterprise.
+            </p>
+          </motion.div>
+          <motion.div
+           initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+            },
+          }} className={styles.TextUpperTwoSecond}>
             <p className={styles.text2one}>
               Our consultants are a blend of academic acumen and real-world
               pragmatism. With advanced degrees in their respective fields
@@ -88,11 +137,10 @@ const AboutUs = () => {
               unit, we pledge to bring you the best of both worlds – theoretical
               mastery and practical brilliance.
             </p>
-            </div>
+          </motion.div>
           {/* )} */}
           {/* {showFullText && ( */}
           <>
-        
             {/* <div className={styles.MainButton}>
                                 <div className={styles.readMoreButtonOuter}>
                                     <span className={styles.readMoreButton} onClick={toggleText}>
