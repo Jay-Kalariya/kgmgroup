@@ -11,6 +11,9 @@ import Slider from "@/components/slider/Slider";
 import AccordionItem from "@/components/faqaccordian/faqdata";
 import Footer from "@/components/footer/footer";
 import Webgl from "./webgl/page";
+import "./globals.css";
+
+import FluidSimulation from 'fluid-simulation-react';
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -40,8 +43,11 @@ export default function Home() {
 
   return (
     <div data-scroll-container>
+       <div className="WeglFluid">
+      <FluidSimulation  />
+      </div>
       {/* <Webgl /> */}
-      <Model />
+      {/* <Model /> */}
       <Abc />
       <PortfolioCard />
       <FourCards />

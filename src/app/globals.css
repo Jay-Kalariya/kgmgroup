@@ -12,13 +12,37 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: black;
-  color: white;
+  color: white; 
+  /* height: 100%; */
   outline: none;
+  /* position: relative; */
+  /* z-index: 99;  */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+.WeglFluid{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 11;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  /* z-index: -1; */
 }
 
 @font-face {
