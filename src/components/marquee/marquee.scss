@@ -12,6 +12,27 @@
     align-items: center;
     overflow-x: hidden;
   }
+
+  .image-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-single {
+    display: flex;
+    width: 100%;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    width: auto;
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
   
   .text-single {
     position: relative;
