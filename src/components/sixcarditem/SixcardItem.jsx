@@ -50,7 +50,7 @@ const SixcardItem = () => {
           <SixcardImages
             ImageSrc={dribbble1}
             xDirection={"-350"}
-            RotateDirection={"-20"}
+            RotateDirection={"-40"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
             PaddingImg={"0px"}
@@ -58,30 +58,30 @@ const SixcardItem = () => {
           <SixcardImages
             ImageSrc={dribbble2}
             xDirection={"350"}
-            RotateDirection={"20"}
+            RotateDirection={"40"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
             PaddingImg={"0px"}
           />
           <SixcardImages
             ImageSrc={dribbble3}
-            xDirection={"-550"}
-            RotateDirection={"-10"}
+            xDirection={"-400"}
+            RotateDirection={"-20"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
             PaddingImg={"-100px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble4}
-            xDirection={"550"}
-            RotateDirection={"10"}
+            xDirection={"400"}
+            RotateDirection={"20"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
             PaddingImg={"-100px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble5}
-            xDirection={"-250"}
+            xDirection={"-200"}
             RotateDirection={"-30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
@@ -89,7 +89,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble6}
-            xDirection={"250"}
+            xDirection={"200"}
             RotateDirection={"30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
