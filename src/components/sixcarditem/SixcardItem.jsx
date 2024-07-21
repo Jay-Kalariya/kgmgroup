@@ -81,7 +81,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble5}
-            xDirection={"-200"}
+            xDirection={"-150"}
             RotateDirection={"-30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
@@ -89,7 +89,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble6}
-            xDirection={"200"}
+            xDirection={"150"}
             RotateDirection={"30"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
