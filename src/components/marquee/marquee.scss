@@ -1,0 +1,32 @@
+.scroll {
+    // height: 60vh;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-marquee {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .text-single {
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    will-change: transform;
+  }
+  
+  .text {
+    padding: 0;
+    font-size: 6.4rem;
+    display: inline-block;
+    margin-right: 2rem;
+    font-family: arial;
+    font-weight: bold;
+  }
+  
