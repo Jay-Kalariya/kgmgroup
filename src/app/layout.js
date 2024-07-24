@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Headers from "@/components/headers/index";
-// import Footer from "@/components/footer/footer";
-const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/components/footer/footer";
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "KGM Group",
@@ -12,10 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head></head>
+      <body>
         <Headers />
-        <main>{children}</main>
-        {/* <Footer /> */}
+        {children}
+        <Footer />
       </body>
     </html>
   );

@@ -3,6 +3,9 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "./contactus.css";
+import { motion } from "framer-motion";
+import { translate } from "../../components/headers/anim"; // Import animations
+
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -13,6 +16,21 @@ const schema = yup.object().shape({
 });
 
 const Contactus = () => {
+  const getChars = (text) => {
+    return text.split("").map((char, index) => (
+      <motion.span
+        key={char + index}
+        custom={[index * 0.02, (text.length - index) * 0.01]}
+        variants={translate}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        {char}
+      </motion.span>
+    ));
+  };
+
   const {
     register,
     handleSubmit,
@@ -29,11 +47,34 @@ const Contactus = () => {
     <section className="MainContactForm">
       <div className="contact-form-container">
         <div className="HeaderMain">
-          <p className="HeaderTextTitle">Lets work together.</p>
-          <p className="HeaderTextTitleInner">
-            Interested in working together? Fill out some info and we will be in
-            touch shortly! We cant wait to hear from you!
-          </p>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
+        viewport={{ once: true }}
+      >
+        <p className="HeaderTextTitle">
+          {getChars("Let's work together.")}
+        </p>
+      </motion.div>
+          {/* <p className="HeaderTextTitle">Let{"'"}s work together.</p> */}
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true }}
+          > <p className="HeaderTextTitleInner">
+          Interested in working together? Fill out some info and we will be in
+          touch shortly! We cant wait to hear from you!
+        </p></motion.div>
+         
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="FlexContainer">

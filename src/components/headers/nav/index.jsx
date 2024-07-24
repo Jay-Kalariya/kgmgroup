@@ -25,21 +25,6 @@ const links = [
     href: "/contact-us",
     // src: image1,
   },
-  // {
-  //   title: "Portfolio",
-  //   href: "/",
-  //   // src: image2,
-  // },
-  // {
-  //   title: "Blogs",
-  //   href: "/",
-  //   // src: image1,
-  // },
-  // {
-  //   title: "Career",
-  //   href: "/",
-  //   // src: image2,
-  // },
  
 ];
 

@@ -9,7 +9,6 @@ import FourCards from "@/components/fourcards/FourCards";
 import SixcardItem from "@/components/sixcarditem/SixcardItem";
 import Slider from "@/components/slider/Slider";
 import AccordionItem from "@/components/faqaccordian/faqdata";
-import Footer from "@/components/footer/footer";
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -46,7 +45,6 @@ export default function Home() {
       <SixcardItem />
       <Slider />
       <AccordionItem />
-      <Footer />
       {/* <p>Header</p> */}
     </div>
   );

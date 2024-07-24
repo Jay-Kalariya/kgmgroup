@@ -4,17 +4,31 @@ import styles from "@/components/aboutus/aboutus.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AboutUsImg from "@/images/about_image.jpg";
-
+import { translate } from "../../components/headers/anim"; // Import animations
 const AboutUs = () => {
-  const [showFullText, setShowFullText] = useState(false);
+  // const [showFullText, setShowFullText] = useState(false);
 
-  const toggleText = () => {
-    setShowFullText(!showFullText);
+  // const toggleText = () => {
+  //   setShowFullText(!showFullText);
+  // };
+  
+  const getChars = (text) => {
+    return text.split("").map((char, index) => (
+      <motion.span
+        key={char + index}
+        custom={[index * 0.02, (text.length - index) * 0.01]}
+        variants={translate}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        {char}
+      </motion.span>
+    ));
   };
-
   return (
     <div className={styles.AboutUsMainContainer}>
-      <motion.div
+      {/* <motion.div
         initial={{
           opacity: 0,
           y: 50,
@@ -29,6 +43,15 @@ const AboutUs = () => {
         viewport={{ once: true }}
       >
         <p className={styles.text1}>Behind the Scenes</p>
+      </motion.div> */}
+       <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
+        viewport={{ once: true }}
+      >
+        <p className={styles.text1}>
+          {getChars("Behind the Scenes")}
+        </p>
       </motion.div>
       <div className={styles.AboutImageContainer}>
         <Image src={AboutUsImg} className={styles.AboutUsimg} />
@@ -47,7 +70,7 @@ const AboutUs = () => {
                 duration: 1,
               },
             }}
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             className={styles.TextUpper}
           >
             <p className={styles.text2}>
@@ -68,19 +91,21 @@ const AboutUs = () => {
             </p>
           </motion.div>
           {/* {!showFullText && ( */}
-          <motion.div 
-           initial={{
-            opacity: 0,
-            y: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
-          className={styles.TextUpperTwo}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true }}
+            className={styles.TextUpperTwo}
+          >
             <p className={styles.text2one}>
               Under Zaids leadership, our team is dedicated to fostering close
               collaborations with each client. Recognizing that every business
@@ -92,18 +117,20 @@ const AboutUs = () => {
             </p>
           </motion.div>
           <motion.div
-           initial={{
-            opacity: 0,
-            y: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
-           className={styles.TextUpperTwo}>
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true }}
+            className={styles.TextUpperTwo}
+          >
             <p className={styles.text2one}>
               Under Zaids leadership, our team is dedicated to fostering close
               collaborations with each client. Recognizing that every business
@@ -115,17 +142,20 @@ const AboutUs = () => {
             </p>
           </motion.div>
           <motion.div
-           initial={{
-            opacity: 0,
-            y: 50,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 1,
-            },
-          }} className={styles.TextUpperTwoSecond}>
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true }}
+            className={styles.TextUpperTwoSecond}
+          >
             <p className={styles.text2one}>
               Our consultants are a blend of academic acumen and real-world
               pragmatism. With advanced degrees in their respective fields

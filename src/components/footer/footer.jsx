@@ -36,7 +36,7 @@ const Footer = () => {
   const pathname = usePathname();
   console.log("url", pathname);
   return (
-    (pathname === "/" || pathname === "/store") && (
+    // (pathname === "/") && (
       <footer>
       
         <nav>
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <div className="copyright">© 2024 All Rights Reserved</div>
       </footer>
-    )
+    // )
   );
 };
 export default Footer;

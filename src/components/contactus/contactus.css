@@ -1,11 +1,10 @@
 .MainContactForm {
-  padding-top: 6rem;
+  padding: 200px 0;
 }
 
 .contact-form-container {
   max-width: 900px;
   margin: auto;
-  padding: 20px;
   color: #fff;
 }
 
@@ -26,6 +25,7 @@
 .HeaderTextTitleInner {
   font-size: 20px;
   padding: 40px 0;
+  line-height: 27px;
 }
 
 .form-group {
@@ -39,6 +39,7 @@
   gap: 3rem;
   /* justify-content: space-between; */
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .form-group label {
@@ -85,7 +86,7 @@
   } */
 
 .ButtonOuter {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .ButtonSubmit {
@@ -150,4 +151,31 @@
   .ButtonInner {
     font-size: 14px;
   }
+  .HeaderTextTitle {
+    font-size: 70px;
+    letter-spacing: normal;
+  }
+  .HeaderTextTitleInner{
+    line-height: 27px;
+  }
+  .contact-form-container {
+    padding: 0 50px;
+    max-width: 100%;
+}
+.ButtonOuter {
+  padding-top: 5rem;
+}
+}
+@media(max-width: 575px){
+  .HeaderTextTitle {
+    font-size: 50px;
+    letter-spacing: normal;
+  }
+  .contact-form-container {
+    padding: 0 25px;
+    max-width: 100%;
+}
+.ButtonOuter {
+  padding-top: 5rem;
+}
 }

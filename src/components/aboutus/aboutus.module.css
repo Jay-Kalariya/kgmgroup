@@ -110,7 +110,7 @@
     flex-direction: column-reverse;
   }
   .AboutUsMainContainer {
-    padding-right: 2rem;
+    padding: 0 50px;
   }
   .MainFlexOne {
     width: 100%;
@@ -122,9 +122,26 @@
   .AboutUsFlex {
     gap: 3rem;
   }
+  .TextUpper{
+    width: 100%;
+  }
+  .text2one{
+    width: 100%;
+  }
+  .text1{
+    padding: 230px 0 50px;
+    font-size: 50px;
+  }
 }
 @media (max-width: 575px) {
   .text2 {
     font-size: 18px;
+  }
+  .AboutUsMainContainer {
+    padding: 0 25px;
+  }
+  .text1{
+    padding: 230px 0 25px;
+    font-size: 30px;
   }
 }

@@ -1,7 +1,6 @@
 "use client"
 import ContactPage from "@/components/contactus/Contactus";
 import { useEffect } from "react";
-import Footer from "@/components/footer/footer";
 function ContactUs() {
     useEffect(() => {
         document.title =
@@ -10,7 +9,6 @@ function ContactUs() {
     return (
         <>
             <ContactPage />
-            <Footer />
         </>
     )
 }
