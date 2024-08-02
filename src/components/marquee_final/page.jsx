@@ -16,6 +16,7 @@ import Img9 from "@/ImagesNew/marquee1.svg";
 import Img10 from "@/ImagesNew/oi.svg";
 
 const Certification = () => {
+  
   return (
     <>
      <div className="certification_main" >

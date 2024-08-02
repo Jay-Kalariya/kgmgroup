@@ -89,12 +89,19 @@
   padding-top: 5rem;
 }
 
+
+
+
+
+
+
 .ButtonSubmit {
   position: relative;
   overflow: hidden;
   height: 3.25rem;
   padding: 0 3rem;
-  background: rgb(254, 197, 84);
+  /* background: rgb(254, 197, 84); */
+  background-color: #d1d5db;
   background-size: 400%;
   color: black;
   border: none;
