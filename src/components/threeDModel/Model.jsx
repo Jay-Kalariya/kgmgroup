@@ -6,7 +6,7 @@ function Model() {
     return(
           <div className={styles.Text}>
             {/* <p>3d Model</p> */}
-            <Spline scene="https://prod.spline.design/f022O34znqOzSb5J/scene.splinecode" className={styles.Spliendesign}/>
+            <Spline scene="https://prod.spline.design/AG-1TQBus0hBryDl/scene.splinecode" className={styles.Spliendesign}/>
           </div>
     )
 };

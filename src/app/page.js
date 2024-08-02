@@ -9,6 +9,7 @@ import FourCards from "@/components/fourcards/FourCards";
 import SixcardItem from "@/components/sixcarditem/SixcardItem";
 import Slider from "@/components/slider/Slider";
 import AccordionItem from "@/components/faqaccordian/faqdata";
+import ThreedSliderFirst from "@/components/threedfirstpage/page";
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -38,6 +39,7 @@ export default function Home() {
 
   return (
     <div data-scroll-container>
+      <ThreedSliderFirst />
       <Model />
       <Abc />
       <PortfolioCard />
