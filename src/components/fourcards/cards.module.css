@@ -277,10 +277,13 @@
     padding-right: 10px;
   }
   .char {
-    height: 1.5em;
+    /* height: 1.5em; */
     line-height: normal;
   }
   .trHomeAchievedNumberTwo{
     /* top: 30px; */
+  }
+  .charblock{
+    display: none;
   }
 }
