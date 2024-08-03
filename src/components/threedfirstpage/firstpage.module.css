@@ -75,13 +75,13 @@
 }
 @media (max-width: 425px) {
     .TextInnerModel {
-      left: 17%;
+      left: 15%;
       width: 64%;
       top: 16%;
       transform: translate(-10%, -50%);
     }
     .InnerTextModule{
-        font-size: 25px;
+        font-size: 30px;
         width: 100%;
     }
     .InnerTextfieldOne{
