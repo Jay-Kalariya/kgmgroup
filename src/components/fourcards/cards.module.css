@@ -278,8 +278,9 @@
   }
   .char {
     height: 1em;
+    line-height: normal;
   }
   .trHomeAchievedNumberTwo{
-    top: 30px;
+    /* top: 30px; */
   }
 }
