@@ -17,26 +17,27 @@
 }
 .TextInnerModel {
   position: absolute;
-  top: 18%;
+  top: 22%;
   left: 37%;
   transform: translate(-50%, -50%);
 }
 .InnerTextModule {
-  font-size: 50px;
+  font-size: 70px;
   color: #fff;
   text-align: left;
-  width: 50%;
+  width: 66%;
 }
 .InnerTextfield {
   position: absolute;
   top: 80%;
-  left: 37%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .InnerTextfieldOne {
-  font-size: 25px;
+  font-size: 18px;
   color: #fff;
-  width: 50%;
+  width: 70%;
+  line-height: 25px;
   text-align: left;
 }
 @media (min-width: 1500px) {
@@ -86,6 +87,7 @@
     }
     .InnerTextfieldOne{
         width: 90%;
+        font-size: 16px;
     }
     .InnerTextfield{
         top: 80%;
