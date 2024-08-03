@@ -125,3 +125,8 @@
     right: 20px;
   }
 }
+@media(max-width: 425px){
+  .new_header_el{
+    padding-top: 30px;
+  }
+}
