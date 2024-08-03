@@ -87,7 +87,7 @@ const AchievedBlock = ({ xDirection, RotateDirection, numberOne, numberTwo, cate
             <span className={styles.sup}>+</span>
           </div>
           <div className={styles.trHomeAchievedNumberTwo} ref={numberTwoRef}>
-            {numberTwo}
+           <p className={styles.charblock}> {numberTwo}</p>
             <span className={styles.sup}>+</span>
           </div>
         </div>

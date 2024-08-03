@@ -1,15 +1,95 @@
-.Text{
-    height: 100vh;
-    /* color: white; */
-    /* font-size: 60px; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 3rem 0; */
+.Text {
+  height: 100vh;
+  /* color: white; */
+  /* font-size: 60px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 3rem 0; */
+  position: relative;
+  border-bottom: 1px solid white;
 }
-.Spliendesign{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+.Spliendesign {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.TextInnerModel {
+  position: absolute;
+  top: 18%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+}
+.InnerTextModule {
+  font-size: 50px;
+  color: #fff;
+  text-align: left;
+  width: 50%;
+}
+.InnerTextfield {
+  position: absolute;
+  top: 80%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+}
+.InnerTextfieldOne {
+  font-size: 25px;
+  color: #fff;
+  width: 50%;
+  text-align: left;
+}
+@media (min-width: 1500px) {
+  .InnerTextModule {
+    width: 40%;
+  }
+  .TextInnerModel{
+    top: 15%;
+  }
+}
+@media (max-width: 1024px) {
+  .InnerTextfield {
+    position: absolute;
+    top: 86%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+  }
+  .InnerTextfieldOne {
+    width: 70%;
+    font-size: 18px;
+  }
+  .TextInnerModel{
+    left: 36%;
+  }
+  .InnerTextModule{
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+    .InnerTextModule{
+        font-size: 25px;
+    }
+    .InnerTextfieldOne{
+        width: 80%;
+    }
+}
+@media (max-width: 425px) {
+    .TextInnerModel {
+      left: 17%;
+      width: 64%;
+      top: 16%;
+      transform: translate(-10%, -50%);
+    }
+    .InnerTextModule{
+        font-size: 25px;
+        width: 100%;
+    }
+    .InnerTextfieldOne{
+        width: 90%;
+    }
+    .InnerTextfield{
+        top: 86%;
+        left: 53%;
+        width: 100%;
+    }
 }

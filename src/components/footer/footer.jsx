@@ -4,7 +4,8 @@ import LinkHover from "../linkHover/LinkHover";
 import { usePathname } from "next/navigation";
 import border from "@/images/yellow_footer_border.svg";
 import Image from "next/image";
-import image_logo from "@/images/logo_final.png"
+import image_logo from "@/imagesNew/new_Logo_Final.png";
+import Link from "next/link";
 const footerUrls = [
   {
     url1: "/about-us",
@@ -37,40 +38,39 @@ const Footer = () => {
   console.log("url", pathname);
   return (
     // (pathname === "/") && (
-      <footer>
-      
-        <nav>
-        <div>
-        <Image src={image_logo} alt="none"/>
+    <footer>
+      <nav>
+        <Link href={"/"}>
+          <Image src={image_logo} alt="none" />
+        </Link>
+        {footerUrls.map((item, index) => (
+          <ul key={index}>
+            <li>
+              <LinkHover
+                url={item.url1}
+                text={item.url1Text}
+                color={"#fff"}
+                borderColor={"white"}
+                fontSize={"16px"}
+              />
+            </li>
+            <li key={index}>
+              <LinkHover
+                url={item.url2}
+                text={item.url2Text}
+                color={"#fff"}
+                borderColor={"white"}
+                fontSize={"16px"}
+              />
+            </li>
+          </ul>
+        ))}
+      </nav>
+      <div className="ImageBorder">
+        {/* <Image src={border} alt="border" /> */}
       </div>
-          {footerUrls.map((item, index) => (
-            <ul key={index}>
-              <li>
-                <LinkHover
-                  url={item.url1}
-                  text={item.url1Text}
-                  color={"#fff"}
-                  borderColor={"white"}
-                  fontSize={"16px"}
-                />
-              </li>
-              <li key={index}>
-                <LinkHover
-                  url={item.url2}
-                  text={item.url2Text}
-                  color={"#fff"}
-                  borderColor={"white"}
-                  fontSize={"16px"}
-                />
-              </li>
-            </ul>
-          ))}
-        </nav>
-        <div className="ImageBorder">
-        <Image src={border} alt="border" />
-        </div>
-        <div className="copyright">© 2024 All Rights Reserved</div>
-      </footer>
+      <div className="copyright">© 2024 All Rights Reserved</div>
+    </footer>
     // )
   );
 };

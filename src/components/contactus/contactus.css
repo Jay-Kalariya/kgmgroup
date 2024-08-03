@@ -89,19 +89,19 @@
   padding-top: 5rem;
 }
 
-
-
-
-
-
-
 .ButtonSubmit {
   position: relative;
   overflow: hidden;
   height: 3.25rem;
   padding: 0 3rem;
   /* background: rgb(254, 197, 84); */
-  background-color: #d1d5db;
+  background: linear-gradient(
+    64deg,
+    rgba(40, 30, 135, 1) 0%,
+    rgba(233, 33, 210, 1) 50%,
+    rgba(253, 30, 113, 1) 59%,
+    rgba(252, 176, 69, 1) 100%
+  ) !important;
   background-size: 400%;
   color: black;
   border: none;
@@ -125,6 +125,7 @@
   z-index: 1;
   cursor: pointer;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .ButtonSubmit::before {
@@ -143,6 +144,7 @@
 
 .ButtonSubmit:hover::before {
   transform: scaleX(1);
+ 
 }
 
 @media (max-width: 768px) {
@@ -162,18 +164,18 @@
     font-size: 70px;
     letter-spacing: normal;
   }
-  .HeaderTextTitleInner{
+  .HeaderTextTitleInner {
     line-height: 27px;
   }
   .contact-form-container {
     padding: 0 50px;
     max-width: 100%;
+  }
+  .ButtonOuter {
+    padding-top: 5rem;
+  }
 }
-.ButtonOuter {
-  padding-top: 5rem;
-}
-}
-@media(max-width: 575px){
+@media (max-width: 575px) {
   .HeaderTextTitle {
     font-size: 50px;
     letter-spacing: normal;
@@ -181,8 +183,8 @@
   .contact-form-container {
     padding: 0 25px;
     max-width: 100%;
-}
-.ButtonOuter {
-  padding-top: 5rem;
-}
+  }
+  .ButtonOuter {
+    padding-top: 5rem;
+  }
 }
