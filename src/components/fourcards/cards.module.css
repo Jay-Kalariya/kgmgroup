@@ -277,9 +277,9 @@
     padding-right: 10px;
   }
   .char {
-    height: 0.8em;
+    height: 1em;
   }
   .trHomeAchievedNumberTwo{
-    top: -5px;
+    top: 5px;
   }
 }
