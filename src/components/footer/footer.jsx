@@ -4,7 +4,7 @@ import LinkHover from "../linkHover/LinkHover";
 import { usePathname } from "next/navigation";
 import border from "@/images/yellow_footer_border.svg";
 import Image from "next/image";
-import image_logo from "@/imagesNew/new_Logo_Final.png";
+import image_logo from "@/ImagesNew/new_Logo_Final.png";
 import Link from "next/link";
 const footerUrls = [
   {

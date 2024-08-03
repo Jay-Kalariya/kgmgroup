@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { opacity } from "./anim";
 import NavSection from "./nav/index";
 import Image from "next/image";
-import logoImage from "@/imagesNew/new_Logo_Final.png";
+// import logoImage from "@/imagesNew/new_Logo_Final.png";
 export default function NewNav() {
   const [isActive, setIsActive] = useState(false);
   // const [toggle, setToggle] = useState(false);
