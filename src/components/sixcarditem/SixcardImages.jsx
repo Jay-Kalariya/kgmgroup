@@ -17,7 +17,7 @@ const SixcardImages = ({PaddingImg, xDirection, RotateDirection, ImageSrc , scro
       {
         x: xDirection,
         rotate: RotateDirection,
-        duration: 0.5,
+        duration: 0.8,
         scrollTrigger: {
           trigger: cardRef.current,
           start: scrollTriggerConfig,

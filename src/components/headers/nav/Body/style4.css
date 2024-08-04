@@ -26,7 +26,17 @@
     margin-top: 80px;
   }
   .nav_body p {
-    font-size: 3.5vw;
+    font-size: 6vw;
     padding-right: 2vw;
+  }
+}
+@media(max-width: 768px){
+  .nav_body p {
+    font-size: 6vw;
+  }
+}
+@media(max-width: 426px){
+  .nav_body p {
+    font-size: 10vw;
   }
 }

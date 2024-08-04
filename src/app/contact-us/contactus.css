@@ -1,0 +1,9 @@
+.MainContactPage {
+  display: flex;
+  align-items: center;
+}
+@media(max-width: 768px){
+    .MainContactPage {
+        flex-direction: column;
+    }
+}

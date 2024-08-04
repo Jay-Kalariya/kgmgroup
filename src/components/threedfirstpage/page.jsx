@@ -1,14 +1,14 @@
 // "use client";
 import styles from "./firstpage.module.css";
-// import Spline from '@splinetool/react-spline';
-import Spline from "@splinetool/react-spline/next";
+import Spline from '@splinetool/react-spline';
+// import Spline from "@splinetool/react-spline/next";
 function Model() {
   return (
     <div className={styles.Text}>
       <div className={styles.TextInnerModel}>
         <p className={styles.InnerTextModule}>
-          Roar Data Bridge the Gap Between Data and Decision-Making
-        </p>
+          Roar Data <br /> Bridge the Gap Between Data and Decision-Making
+        </p>  
       </div>
       <Spline
         scene="https://prod.spline.design/Qr4-g4dqy2Kpwg1O/scene.splinecode"

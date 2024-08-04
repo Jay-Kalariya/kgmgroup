@@ -4,8 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Body from "./Body";
 import Footer from "./Footer";
-// import image1 from "../../../images/blog_1.png";
-// import image2 from "../../../images/blog_2.png";
+import image1 from "../../../images/capabilities_accordion_c1_b1.jpg";
+import image2 from "../../../images/capabilities_accordion_c1_b3.jpg";
+import image3 from "../../../images/capabilities_accordion_c2_b1.jpg";
 import NavImage from "./Image";
 import PropTypes from "prop-types";
 
@@ -13,17 +14,17 @@ const links = [
   {
     title: "Home",
     href: "/",
-    // src: image1,
+    src: image1,
   },
   {
     title: "About - Us",
     href: "/about-us",
-    // src: image2,
+    src: image2,
   },
   {
     title: "Contact - Us",
     href: "/contact-us",
-    // src: image1,
+    src: image3,
   },
  
 ];

@@ -4,8 +4,10 @@ import LinkHover from "../linkHover/LinkHover";
 import { usePathname } from "next/navigation";
 import border from "@/images/yellow_footer_border.svg";
 import Image from "next/image";
+import BigText from "../bigTextHeading/BigText";
 import image_logo from "@/ImagesNew/new_Logo_Final.png";
 import Link from "next/link";
+
 const footerUrls = [
   {
     url1: "/about-us",
@@ -34,14 +36,32 @@ const footerUrls = [
 ];
 
 const Footer = () => {
+  const texts = ["TIME TO"];
+  const texts1 = ["ROAR!"];
   const pathname = usePathname();
   console.log("url", pathname);
   return (
     // (pathname === "/") && (
     <footer>
+      <div>
+        <div>
+          <BigText
+            texts={texts}
+            xDirection={"-40px"}
+            X1Direction={"100px"}
+            X2Direction={"100%"}
+          />
+          <BigText
+            texts={texts1}
+            xDirection={"200px"}
+            X1Direction={"100px"}
+            X2Direction={"100%"}
+          />
+        </div>
+      </div>
       <nav>
         <Link href={"/"}>
-          <Image src={image_logo} alt="none" />
+          <Image src={image_logo} alt="none" className="ImageFooterLogo"/>
         </Link>
         {footerUrls.map((item, index) => (
           <ul key={index}>

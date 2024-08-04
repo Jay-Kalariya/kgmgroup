@@ -1,5 +1,6 @@
 .MainContactForm {
-  padding: 200px 0;
+  padding: 100px 0;
+  width: 46%;
 }
 
 .contact-form-container {
@@ -18,7 +19,7 @@
 }
 
 .HeaderTextTitle {
-  font-size: 80px;
+  font-size: 65px;
   letter-spacing: 0.05em;
 }
 
@@ -148,6 +149,9 @@
 }
 
 @media (max-width: 768px) {
+  .MainContactForm {
+    width: 100%;
+  }
   .contact-form-container {
     padding: 15px;
   }

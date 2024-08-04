@@ -44,7 +44,9 @@
 .shop {
   display: none;
 }
-
+.nav_img_logo{
+  display: none;
+}
 .new_header_el {
   display: flex;
   align-items: center;
@@ -123,6 +125,9 @@
   }
   .new_header_el {
     right: 20px;
+  }
+  .nav_img_logo{
+    display: inline;
   }
 }
 @media(max-width: 425px){

@@ -38,7 +38,7 @@ export default function NewNav() {
           
         >
           {/* <p>Logo</p> */}
-          {/* <Image src={logoImage} alt="logoImage" /> */}
+          {/* <Image src={logoImage} alt="logoImage" className="nav_img_logo"/> */}
         </Link>
         <div
           onClick={() => {

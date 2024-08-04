@@ -45,12 +45,14 @@
   .thumb {
     counter-increment: projects-counter;
     transition: all  ease-in-out;
+    background-color: #121315;
     /* border: 1px solid white; */
     border: 1px solid #e0eeee;
     border-radius: 30px;
     border-width: 1px;
-    height: 65vh;
+    height: 80vh;
     position: relative;
+    margin: 0 20px;
     /* padding: 100px; */
   }
   .thumb:hover{
@@ -156,4 +158,9 @@
   .cursor.visible {
     display: flex;
   }
-  
+  @media(max-width: 768px){
+    .thumb {
+      height: 85vh;
+      margin: 0 20px;
+    }
+  }

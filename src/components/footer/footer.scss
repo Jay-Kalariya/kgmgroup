@@ -4,6 +4,7 @@ footer {
     padding: 50px 20px;
   }
   nav {
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +21,14 @@ footer {
       flex-wrap: wrap;
     }
     @media (max-width: 767px) {
-      gap: 10px;
+      gap: 20px;
       justify-content: space-between;
+    }
+    .ImageFooterLogo{
+      margin-left: 120px;
+      @media(max-width: 768px){
+        margin-left: 0rem;
+      }
     }
 
     ul {

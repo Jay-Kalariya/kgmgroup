@@ -17,38 +17,48 @@
 }
 .TextInnerModel {
   position: absolute;
-  top: 22%;
+  top: 26%;
   left: 37%;
   transform: translate(-50%, -50%);
 }
 .InnerTextModule {
-  font-size: 70px;
+  font-size: 72px;
   color: #fff;
   text-align: left;
-  width: 66%;
+  line-height: 100%;
+  font-weight: 400;
+  width: 80%;
 }
 .InnerTextfield {
   position: absolute;
   top: 80%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
 }
 .InnerTextfieldOne {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Helvetican_Light";
   color: #fff;
-  width: 70%;
-  line-height: 25px;
+  width: 58%;
+  /* line-height: 25px; */
   text-align: left;
+  line-height: 160%;
+  font-weight: 300;
 }
 @media (min-width: 1500px) {
   .InnerTextModule {
-    width: 40%;
-  }
-  .TextInnerModel{
-    top: 15%;
+    width: 70%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
+  .InnerTextModule {
+    font-size: 3.375rem;
+  }
+  .InnerTextfieldOne{
+    width: 85%;
+  }
+}
+/* @media (max-width: 1024px) {
   .InnerTextfield {
     position: absolute;
     top: 86%;
@@ -65,33 +75,38 @@
   .InnerTextModule{
     font-size: 42px;
   }
-}
+} */
 @media (max-width: 768px) {
-    .InnerTextModule{
-        font-size: 25px;
-    }
-    .InnerTextfieldOne{
-        width: 80%;
-    }
+  .InnerTextModule {
+    font-size: 2.25rem;
+    width: 90%;
+  }
+  .InnerTextfieldOne {
+    width: 100%;
+  }
+  .InnerTextfield{
+    left: 37%;
+  }
 }
-@media (max-width: 425px) {
-    .TextInnerModel {
-      left: 15%;
-      width: 64%;
-      top: 16%;
-      transform: translate(-10%, -50%);
-    }
-    .InnerTextModule{
-        font-size: 30px;
-        width: 100%;
-    }
-    .InnerTextfieldOne{
-        width: 88%;
-        font-size: 16px;
-    }
-    .InnerTextfield{
-        top: 80%;
-        left: 53%;
-        width: 100%;
-    }
+@media (max-width: 440px) {
+  .TextInnerModel {
+    left: 15%;
+    width: 70%;
+    top: 25%;
+    transform: translate(-10%, -50%);
+  }
+  .InnerTextModule {
+    font-size: 30px;
+    width: 100%;
+  }
+  .InnerTextfieldOne {
+    width: 88%;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .InnerTextfield {
+    top: 80%;
+    left: 53%;
+    width: 100%;
+  }
 }
