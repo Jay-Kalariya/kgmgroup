@@ -23,7 +23,7 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
                     className={`${styles.rcAccordionToggle} ${active === id ? styles.rcAccordionToggleActive : ''} p-3`}
                     onClick={() => handleToggle(id)}
                 >
-                    <h5 className={styles.rcAccordionTitle}>{header}</h5>
+                    <h5 className={`${styles.rcAccordionTitle} ${styles.otherClass}`}>{header}</h5>
                     <svg className={styles.rcAccordionIcon} width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
                 </div>
             </div>

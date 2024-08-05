@@ -41,7 +41,7 @@ const HomeBanner =({loadImage}) =>{
         </p>
       </div>
       <div className={styles.InnerTextfieldScroll}>
-        <p>Scroll Down</p>
+      <p className={`${styles.scrollDown} ${styles.otherClass}`}>scroll down</p>
       </div>
     </div>
     

@@ -44,8 +44,21 @@
     position: relative;
     margin-bottom: 0;
     color: white;
-    transition: 0.3s;
+    /* transition: 0.3s; */
+    color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-out;
 }
+.otherClass{
+    background-image: linear-gradient(to right, #c5fcfc 45%, white  55%);
+    background-size: 220% 100%;
+    background-position: 100% 50%;
+  }
+  .otherClass:hover{
+    background-position: 0% 50%;
+  }
 
 .rcAccordionToggleActive .rcAccordionTitle {
     color: #fff;

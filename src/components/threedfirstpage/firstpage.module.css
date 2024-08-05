@@ -51,6 +51,25 @@
   left: 10%;
   transform: translate(-50%, 50%);
 }
+.scrollDown{
+  font-size: calc(100% + 0.5vw);
+  cursor: pointer;
+  line-height: 1.2;
+  margin: 0.3em 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-out;
+}
+.otherClass{
+  background-image: linear-gradient(to right, #c5fcfc 45%, white  55%);
+  background-size: 220% 100%;
+  background-position: 100% 50%;
+}
+.otherClass:hover{
+  background-position: 0% 50%;
+}
 @media (min-width: 1500px) {
   .InnerTextModule {
     width: 70%;
