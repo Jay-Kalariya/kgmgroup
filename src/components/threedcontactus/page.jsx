@@ -7,9 +7,6 @@ function Model() {
             {/* <p>3d Model</p> */}
             <Spline scene=" https://prod.spline.design/YWzTYcQYgn6LVLuR/scene.splinecode" className={styles.Spliendesign}/>
           </div>
-
-
-
     )
 };
 export default Model;
