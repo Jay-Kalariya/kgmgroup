@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     padding: 0 50px;
     border-radius: 25px;
     @media(max-width: 575px){
         padding: 0 20px;
+        margin-bottom: 4rem;
     }
   }
   .image_content5 video {

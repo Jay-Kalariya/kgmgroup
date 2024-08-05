@@ -43,8 +43,9 @@ export default function Home() {
     <div data-scroll-container>
       <ThreedSliderFirst />
       <Model />
-      <Abc />
       <VideoSec />
+      <Abc />
+      
       <PortfolioCard />
       <FourCards />
       <div className="SixcardMainContainer">
