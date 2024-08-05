@@ -96,12 +96,15 @@
   .InnerTextfield{
     left: 37%;
   }
+  .TextInnerModel{
+    top: 15%;
+  }
 }
 @media (max-width: 440px) {
   .TextInnerModel {
     left: 15%;
     width: 70%;
-    top: 20%;
+    top: 18%;
     transform: translate(-10%, -50%);
   }
   .InnerTextModule {

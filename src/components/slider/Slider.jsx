@@ -190,7 +190,7 @@ const initSlider = (selector, options = {}) => {
             slidesPerView: 1.5,
             spaceBetween: 20,
           },
-          315: {
+          325: {
             slidesPerView: 1,
             spaceBetween: 10,
           },

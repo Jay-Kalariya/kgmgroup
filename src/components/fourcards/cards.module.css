@@ -104,6 +104,7 @@
 @media (min-width: 1440px) and (max-width: 1536px) {
   .trHomeAchievedBlock {
     padding: 5rem;
+    width: 667px;
   }
 }
 
