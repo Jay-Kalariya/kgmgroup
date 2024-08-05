@@ -12,6 +12,7 @@
 }
 .rcAccordionToggle:hover {
     transform: scale(1.05);
+    opacity: 50%;
     /* color: #007bff; */
   }
 .containerFluid{

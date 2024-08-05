@@ -16,4 +16,7 @@
     object-fit: cover;
     height: 90vh;
     border-radius: 25px;
+    @media(max-width: 768px){
+        height: auto;
+    }
   }
