@@ -1,8 +1,8 @@
-"use client"
+// "use client"
 import { useEffect, useRef, useState } from 'react';
 import styles from "./firstpage.module.css";
-// import Spline from '@splinetool/react-spline';
-import Spline from "@splinetool/react-spline/next";
+import Spline from '@splinetool/react-spline';
+// import Spline from "@splinetool/react-spline/next";
 const HomeBanner =({loadImage}) =>{
   // const [splineLoaded, setSplineLoaded] = useState(false);
   // const isMounted = useRef(false);
