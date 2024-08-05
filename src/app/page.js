@@ -11,6 +11,7 @@ import Slider from "@/components/slider/Slider";
 import AccordionItem from "@/components/faqaccordian/faqdata";
 import ThreedSliderFirst from "@/components/threedfirstpage/page";
 import SixcardItemMobile from "@/components/sixcardmobile/sixcardmobile";
+import VideoSec from "@/components/videosection/page";
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -43,6 +44,7 @@ export default function Home() {
       <ThreedSliderFirst />
       <Model />
       <Abc />
+      <VideoSec />
       <PortfolioCard />
       <FourCards />
       <div className="SixcardMainContainer">

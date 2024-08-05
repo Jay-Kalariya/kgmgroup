@@ -1,0 +1,18 @@
+.image_content5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 0 50px;
+    border-radius: 25px;
+    @media(max-width: 575px){
+        padding: 0 20px;
+    }
+  }
+  .image_content5 video {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 25px;
+  }
