@@ -15,6 +15,27 @@
   list-style-type: none;
   padding: 0 10px;
 }
+.SocialIconMain{
+  padding-top: 2.5rem;
+}
+.EmailText{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgb(224, 238, 238);
+  padding-bottom: 10px;
+}
+.PhoneText{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgb(224, 238, 238);
+}
+.SocialIcons{
+  width: 38px;
+  height: 38px;
+  padding-right: 5px;
+}
 
 .ul li span {
   color: #ffffff;
@@ -27,5 +48,25 @@
   }
   .ul {
     width: auto;
+  }
+}
+@media(max-width: 991px){
+  .nav_body p{
+    font-size: 6vw;
+  }
+  .ul{
+    width: 100%;
+  }
+}
+@media(max-width: 575px){
+  .EmailText{
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  .PhoneText{
+    font-size: 20px;  
+  }
+  .SocialIconMain{
+    padding-top: 1.5rem;
   }
 }

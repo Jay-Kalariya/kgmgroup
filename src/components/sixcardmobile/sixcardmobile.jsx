@@ -69,8 +69,8 @@ const SixcardItemMobile = () => {
               ImageSrc={dribbble3}
               xDirection={"750"}    
               RotateDirection={"0"}
-              scrollTriggerConfig={"top center"}
-              scrollTriggerConfigend={"center bottom"}
+              scrollTriggerConfig={"top bottom"}
+              scrollTriggerConfigend={"center"}
               PaddingImg={"0px 0px 0px 0px"}
             />
             {/* 4 */}

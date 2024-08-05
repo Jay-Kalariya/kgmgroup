@@ -6,7 +6,7 @@
   position: fixed;
   left: 0;
   z-index: 99999;
-  background-color:black;
+  background-color:#121315;
   top: 0;
   padding: 100px 0 0;
   width: 100%;
@@ -36,6 +36,12 @@
 }
 @media(max-width: 768px){
   .new_nav .wrapper{
-    padding: 0 50px;
+    padding: 0 30px;
+  }
+  .container_navbar{
+    flex-direction: column;
+  }
+  .new_nav{
+    padding: 60px 0;
   }
 }

@@ -178,16 +178,28 @@ const initSlider = (selector, options = {}) => {
       const swiper = new Swiper(slider, {
         loop: true,
         speed: 1000,
-        slidesPerView: 1.5,
+        slidesPerView: 2.5,
         spaceBetween: 10,
         grabCursor: true,
         breakpoints: {
-          1024:{
-            slidesPerView: 1.5,
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
           },
           768:{
             slidesPerView: 1.5,
-          }
+            spaceBetween: 20,
+          },
+          315: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // 1024:{s
+          //   slidesPerView: 1.5,
+          // },
+          // 768:{
+          //   slidesPerView: 1.5,
+          // }
           // 768: {
           //   slidesPerView: 1,
           //   spaceBetween: 30,

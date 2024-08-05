@@ -30,13 +30,18 @@
     padding-right: 2vw;
   }
 }
-@media(max-width: 768px){
+@media(max-width: 991px){
   .nav_body p {
     font-size: 6vw;
   }
 }
+@media(max-width: 768px){
+  .nav_body p {
+    font-size: 8vw !important;
+  }
+}
 @media(max-width: 426px){
   .nav_body p {
-    font-size: 10vw;
+    font-size: 11vw !important;
   }
 }
