@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import Abc from "@/components/headingtextdemo/Textdemo";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import Model from "@/components/threeDModel/Model";
@@ -15,10 +15,10 @@ import VideoSec from "@/components/videosection/page";
 import Preloader from "@/components/preloader/index";
 import { AnimatePresence } from "framer-motion";
 
-const HomeBanner = dynamic(() => import("@/components/threedfirstpage/page"));
+// const HomeBanner = dynamic(() => import("@/components/threedfirstpage/page"));
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [isCounter, setCounter] = useState(0);
+  // const [isLoading, setIsLoading] = useState(true);
+  // const [isCounter, setCounter] = useState(0);
   useEffect(() => {
     document.title =
       "Microsoft Power Bi Consulting Company - Business Intelligence &amp; Data Analytics Consulting Firm Australia - Power Bi Reporting &amp; Data Visualisation Services - Bi Implementation Consultants - Financial Power Bi Dashboard - KGM Group";
@@ -45,22 +45,22 @@ export default function Home() {
     return () => lenis.destroy();
   }, []);
 
-  const handleLoad = (loading) => {
-    console.log("data", loading);
-    setIsLoading(loading);
-  };
+  // const handleLoad = (loading) => {
+  //   console.log("data", loading);
+  //   setIsLoading(loading);
+  // };
 
-  const handleCounter = (data) => {
-    console.log("cc", data);
-    setCounter(data);
-  };
+  // const handleCounter = (data) => {
+  //   console.log("cc", data);
+  //   setCounter(data);
+  // };
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader counter={isCounter} />}
-      </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
+      </AnimatePresence> */}
+      {/* <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
       <div data-scroll-container>
         <ThreedSliderFirst />
         <Model />
