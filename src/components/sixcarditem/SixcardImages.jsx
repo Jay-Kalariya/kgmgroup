@@ -37,6 +37,7 @@ const SixcardImages = ({PaddingImg, xDirection, RotateDirection, ImageSrc , scro
               data-nimg="1"
               style={{ color: "transparent" }}
               src={ImageSrc}
+              className="ImageSixCards"
             />
           </div>
         </div>

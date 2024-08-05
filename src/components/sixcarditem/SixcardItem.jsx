@@ -49,7 +49,7 @@ const SixcardItem = () => {
         <div className={styles.posts}>
           <SixcardImages
             ImageSrc={dribbble1}
-            xDirection={"-450"}
+            xDirection={"-470"}
             RotateDirection={"-35"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
@@ -57,7 +57,7 @@ const SixcardItem = () => {
           />
           <SixcardImages
             ImageSrc={dribbble2}
-            xDirection={"450"}
+            xDirection={"470"}
             RotateDirection={"35"}
             scrollTriggerConfig={"center bottom"}
             scrollTriggerConfigend={"center"}
@@ -66,36 +66,36 @@ const SixcardItem = () => {
           {/* 3 */}
           <SixcardImages
             ImageSrc={dribbble3}
-            xDirection={"-500"}
+            xDirection={"-470"}
             RotateDirection={"-20"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
-            PaddingImg={"-100px 0px 0px 0px"}
+            PaddingImg={"-200px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble4}
-            xDirection={"500"}
+            xDirection={"470"}
             RotateDirection={"20"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
-            PaddingImg={"-100px 0px 0px 0px"}
+            PaddingImg={"-200px 0px 0px 0px"}
           />
           {/* 4 */}
           <SixcardImages
             ImageSrc={dribbble5}
-            xDirection={"-150"}
+            xDirection={"-200"}
             RotateDirection={"-25"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
-            PaddingImg={"-200px 0px 0px 0px"}
+            PaddingImg={"-350px 0px 0px 0px"}
           />
           <SixcardImages
             ImageSrc={dribbble6}
-            xDirection={"150"}
+            xDirection={"200"}
             RotateDirection={"25"}
             scrollTriggerConfig={"top bottom"}
             scrollTriggerConfigend={"top center"}
-            PaddingImg={"-200px 0px 0px 0px"}
+            PaddingImg={"-350px 0px 0px 0px"}
           />
         </div>
       </div>
