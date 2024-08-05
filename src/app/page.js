@@ -57,9 +57,9 @@ export default function Home() {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
-        {isLoading && <Preloader counter={isCounter} />}
-      </AnimatePresence> */}
+      <AnimatePresence mode="wait">
+        { <Preloader />}
+      </AnimatePresence>
       {/* <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
       <div data-scroll-container>
         <ThreedSliderFirst />

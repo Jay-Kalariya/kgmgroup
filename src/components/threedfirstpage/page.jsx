@@ -1,5 +1,5 @@
 // "use client"
-import { useEffect, useRef, useState } from 'react';
+// import { useEffect, useRef, useState } from 'react';
 import styles from "./firstpage.module.css";
 import Spline from '@splinetool/react-spline';
 // import Spline from "@splinetool/react-spline/next";
