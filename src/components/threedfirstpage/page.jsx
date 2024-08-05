@@ -23,7 +23,11 @@ function Model() {
           interfaces that captivate and engage audiences.
         </p>
       </div>
+      <div className={styles.InnerTextfieldScroll}>
+        <p>Scroll Down</p>
+      </div>
     </div>
+    
   );
 }
 // https://prod.spline.design/Qr4-g4dqy2Kpwg1O/scene.splinecode

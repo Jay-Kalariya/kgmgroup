@@ -45,6 +45,12 @@
   line-height: 160%;
   font-weight: 300;
 }
+.InnerTextfieldScroll{
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, 50%);
+}
 @media (min-width: 1500px) {
   .InnerTextModule {
     width: 70%;
@@ -56,6 +62,9 @@
   }
   .InnerTextfieldOne{
     width: 85%;
+  }
+  .InnerTextfieldScroll{
+    display: none;
   }
 }
 /* @media (max-width: 1024px) {
