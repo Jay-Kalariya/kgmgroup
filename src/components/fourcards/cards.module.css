@@ -101,7 +101,7 @@
   background: rgba(220, 229, 229, 0.7);
 }
 
-@media (min-width: 1440px) and (max-width: 1536px) {
+@media (min-width: 1000px) and (max-width: 1536px) {
   .trHomeAchievedBlock {
     padding: 5rem;
     width: 667px;

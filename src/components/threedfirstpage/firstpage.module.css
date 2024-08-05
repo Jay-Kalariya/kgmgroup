@@ -1,3 +1,35 @@
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.cursor__ball {
+  position: fixed;
+  mix-blend-mode: difference;
+}
+
+.cursor__ballbig {
+  height: 30px;
+  width: 30px;
+  /* background: rgba(255, 255, 255, 0); */
+}
+
+.cursor__ballsmall {
+  height: 10px;
+  width: 10px;
+  /* background: rgba(255, 255, 255, 0); */
+}
+
+.cursor__ball circle {
+  fill: #2e2e3069;
+}
+
+
+
+/*  */
 .Text {
   height: 100vh;
   /* color: white; */
@@ -52,15 +84,15 @@
   transform: translate(-50%, 50%);
 }
 .scrollDown{
-  font-size: calc(100% + 0.5vw);
-  cursor: pointer;
-  line-height: 1.2;
-  margin: 0.3em 0;
-  color: transparent;
+  /* font-size: calc(100% + 0.5vw); */
+  /* cursor: pointer; */
+  /* line-height: 1.2; */
+  /* margin: 0.3em 0; */
+  /* color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   background-repeat: no-repeat;
-  transition: 0.5s ease-out;
+  transition: 0.5s ease-out; */
 }
 .otherClass{
   background-image: linear-gradient(to right, #c5fcfc 45%, white  55%);
