@@ -6,10 +6,11 @@ function Model() {
     return(
           <div className={styles.Text}>
             {/* <p>3d Model</p> */}
-            <Spline scene="https://prod.spline.design/AG-1TQBus0hBryDl/scene.splinecode" className={styles.Spliendesign}/>
+            <Spline scene="https://prod.spline.design/Kc0U5W-mcKzGoxtk/scene.splinecode" className={styles.Spliendesign}/>
           </div>
     )
 };
 // https://my.spline.design/untitled-c7fe10b86bd7f6743f8acd38b0abcd58/
 // https://prod.spline.design/f022O34znqOzSb5J/scene.splinecode
+// https://prod.spline.design/Kc0U5W-mcKzGoxtk/scene.splinecode
 export default Model;
